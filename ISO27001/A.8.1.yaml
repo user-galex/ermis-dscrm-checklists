@@ -1,0 +1,57 @@
+control_id: A.8.1
+title: User Endpoint Devices
+checklist_items:
+  - id: A8.1.1
+    description: Does the organization maintain an up-to-date inventory of all user endpoint devices (e.g., laptops, desktops, mobile devices)?
+    type: manual
+    help_text: Use a centralized asset inventory system or CMDB to track device type, MAC address, hostname, assigned user, and last-seen timestamp. Integrate with AD, MDM, or EDR solutions for automatic updates.
+
+  - id: A8.1.2
+    description: Are all devices uniquely identified with details such as owner, location, and purpose?
+    type: manual
+    help_text: Assign unique asset IDs and ensure metadata fields in the inventory system include owner (employee ID or name), physical location (office/site), and functional role (e.g., developer workstation, finance laptop).
+
+  - id: A8.1.3
+    description: Are all endpoint devices equipped with endpoint security software (e.g., antivirus, antimalware)?
+    type: automated
+    help_text: Verify deployment via centralized EDR or AV console (e.g., Microsoft Defender, CrowdStrike, Sophos). Ensure installation success on all active devices and flag unmanaged assets.
+
+  - id: A8.1.4
+    description: Is the endpoint security software regularly updated and centrally monitored?
+    type: automated
+    help_text: Confirm definition updates are set to occur at least daily, and that central dashboards display version status, scan results, and detected threats. Ensure alerting is configured for outdated clients.
+
+  - id: A8.1.5
+    description: Are endpoint devices configured to enforce strong access control measures (e.g., unique user accounts, multi-factor authentication)?
+    type: manual
+    help_text: Review OS settings (e.g., local/group policies) for password complexity, MFA integration (e.g., Microsoft Authenticator, YubiKey), session locking, and disablement of shared or guest accounts.
+
+  - id: A8.1.6
+    description: Are all sensitive data stored on endpoint devices encrypted using approved encryption standards?
+    type: manual
+    help_text: Check that full disk encryption (e.g., BitLocker, FileVault) is enabled and enforced via policy. Verify the use of AES-256 or equivalent, and confirm key recovery processes are in place and secure.
+
+  - id: A8.1.7
+    description: Are endpoint devices hardened by disabling unnecessary services, ports, and applications?
+    type: manual
+    help_text: Apply OS-level security baselines (e.g., CIS Benchmarks). Disable services like Telnet, SMBv1, RDP (if not used), and remove pre-installed or unused apps. Validate using compliance scanning tools.
+
+  - id: A8.1.8
+    description: Are operating systems, applications, and endpoint security tools on devices updated with the latest patches?
+    type: automated
+    help_text: Use patch management tools (e.g., WSUS, SCCM, Intune) to monitor compliance. Track CVE coverage and patch age. Ensure third-party apps (e.g., browsers, Java) are also included in patch scope.
+
+  - id: A8.1.9
+    description: Are procedures in place to report and respond to lost or stolen devices?
+    type: manual
+    help_text: Verify incident response documentation includes lost/stolen asset protocols, including reporting timeframes, forensic evaluation, and remote wipe capabilities. Test user awareness via simulated reports.
+
+  - id: A8.1.10
+    description: Are endpoint devices monitored for suspicious activities, such as unauthorized access or malware infections?
+    type: automated
+    help_text: Ensure EDR or SIEM platforms monitor endpoint behavior. Configure alerts for privilege escalation, lateral movement, unusual file access, or malware indicators. Review alerting thresholds and escalation paths.
+
+  - id: A8.1.11
+    description: Are processes in place for secure disposal or decommissioning of endpoint devices (e.g., data wiping)?
+    type: manual
+    help_text: Confirm data sanitization follows NIST SP 800-88 or equivalent. Require certificates of destruction, use disk-wipe tools (e.g., DBAN, BitRaser), and update asset status to “retired” in inventory records.

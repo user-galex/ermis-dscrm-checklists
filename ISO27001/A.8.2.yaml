@@ -1,0 +1,67 @@
+control_id: A.8.2
+title: Privileged Access Rights
+checklist_items:
+  - id: A8.2.1
+    description: Does the organization maintain an up-to-date inventory of all privileged accounts (e.g., administrative, root, and service accounts)?
+    type: manual
+    help_text: Maintain a centralized, continuously updated inventory of privileged accounts across all systems, including local admin, domain admin, and service accounts. Use identity governance tools (e.g., SailPoint, Azure AD, CyberArk) for visibility.
+
+  - id: A8.2.2
+    description: Are privileged access rights granted based on a documented authorization process (e.g., business justification and manager approval)?
+    type: manual
+    help_text: Require documented approval workflows for all privilege escalations. Use a ticketing or IAM system that enforces approval stages (e.g., business justification, line manager, security review).
+
+  - id: A8.2.3
+    description: Are privileged access requests and approvals recorded and auditable?
+    type: manual
+    help_text: Store access request logs in a tamper-proof or auditable system. Ensure that logs include requester ID, timestamp, justification, approver, and granted rights. Make logs retrievable for audits.
+
+  - id: A8.2.4
+    description: Are privileged access rights aligned with clearly defined roles and responsibilities?
+    type: manual
+    help_text: Map privileged roles to job descriptions. Apply Role-Based Access Control (RBAC) to limit superuser access to those with explicit responsibility. Validate using system role mapping reports.
+
+  - id: A8.2.5
+    description: Is multi-factor authentication (MFA) enforced for all privileged accounts?
+    type: automated
+    help_text: Enforce MFA on all admin accounts at login using identity providers (e.g., Azure AD, Okta, Duo). Apply to both GUI and CLI (e.g., RDP, SSH) access.
+
+  - id: A8.2.6
+    description: Are all privileged account activities logged and monitored for anomalies or unauthorized actions?
+    type: automated
+    help_text: Ensure command execution, access events, and privilege use are logged. Use SIEM or EDR platforms to monitor logs and trigger alerts on suspicious patterns (e.g., out-of-hours use, lateral movement).
+
+  - id: A8.2.7
+    description: Are strong password policies enforced for privileged accounts (e.g., minimum length, complexity, expiration)?
+    type: automated
+    help_text: Use group policies or IAM configurations to enforce minimum 14+ characters, complexity rules, and expiration cycles for admin accounts. Consider passphrase-based policies with periodic rotation.
+
+  - id: A8.2.8
+    description: Are privileged sessions monitored and controlled using session recording tools or privileged session management (PSM)?
+    type: manual
+    help_text: Use PSM solutions (e.g., CyberArk, BeyondTrust) to isolate, record, and control admin sessions. Verify logs include keystrokes, command history, and video playback where applicable.
+
+  - id: A8.2.9
+    description: Is there a process to terminate inactive or unauthorized privileged sessions automatically?
+    type: automated
+    help_text: Configure session timeouts and auto-logoff policies for all privileged access interfaces. Verify PSM or system policies terminate idle sessions and flag unauthorized or persistent access.
+
+  - id: A8.2.10
+    description: Are privileged accounts restricted to the minimum access rights needed for their tasks?
+    type: manual
+    help_text: Apply least-privilege principles through granular roles or just-in-time access provisioning. Periodically validate that elevated permissions are scoped to the necessary systems only.
+
+  - id: A8.2.11
+    description: Are privileged accounts reviewed periodically (e.g., quarterly) to validate access appropriateness?
+    type: manual
+    help_text: Perform quarterly access reviews using access recertification workflows. Involve system owners and managers in confirming ongoing need for privileges.
+
+  - id: A8.2.12
+    description: Are inactive or orphaned privileged accounts promptly identified and disabled?
+    type: automated
+    help_text: Monitor account activity logs and last login timestamps. Use IAM/IDM tooling to automatically detect and disable unused or unassigned privileged accounts within a defined inactivity window (e.g., 30 days).
+
+  - id: A8.2.13
+    description: Are there documented policies and procedures for managing privileged access rights?
+    type: manual
+    help_text: Maintain written policies defining privileged access lifecycle, request/approval workflows, emergency access, logging, and review procedures. Ensure policies are reviewed annually and shared with IT/security staff.
