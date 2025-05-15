@@ -1,0 +1,67 @@
+control_id: A.8.3
+title: Information Access Restriction
+checklist_items:
+  - id: A8.3.1
+    description: Is there a documented access control policy that defines how access to information is restricted and granted?
+    type: manual
+    help_text: Ensure a formal, approved access control policy exists. It should define access roles, assignment procedures, revocation steps, segregation of duties, and approval hierarchies. Reference in onboarding documentation and security awareness training.
+
+  - id: A8.3.2
+    description: Are access rights assigned based on user roles and responsibilities?
+    type: manual
+    help_text: Implement Role-Based Access Control (RBAC). Define access profiles for each role (e.g., HR, IT admin) and map them to system-level permissions. Avoid custom user-level exceptions.
+
+  - id: A8.3.3
+    description: Is access to sensitive information approved through a formal process with documented authorization?
+    type: manual
+    help_text: Require manager and/or data owner approval for access to HR, financial, or customer data. Use ticketing systems or IAM workflows to track approvals.
+
+  - id: A8.3.4
+    description: Are access requests and approvals retained for audit purposes?
+    type: manual
+    help_text: Store access request tickets or approval logs in a centralized repository (e.g., IAM system, service desk). Ensure they are searchable by user and date.
+
+  - id: A8.3.5
+    description: Are access rights promptly revoked when no longer required (e.g., upon role change, termination)?
+    type: automated
+    help_text: Use automated offboarding procedures or IAM de-provisioning triggers to remove access immediately after employee status changes. Monitor user lifecycle events via HR system integration.
+
+  - id: A8.3.6
+    description: Are access rights reviewed periodically (e.g., quarterly or annually) to ensure they are appropriate?
+    type: manual
+    help_text: Perform access recertification campaigns involving system owners. Require business justification for retaining elevated access. Document completion and review findings.
+
+  - id: A8.3.7
+    description: Is sensitive information segregated and protected from unauthorized access (e.g., through network segmentation or folder permissions)?
+    type: manual
+    help_text: Apply logical access controls (e.g., file server ACLs, SharePoint groups) and network segmentation (e.g., VLANs, firewalls) to isolate sensitive systems. Review group membership regularly.
+
+  - id: A8.3.8
+    description: Is MFA enforced for accessing critical systems and sensitive information repositories?
+    type: automated
+    help_text: Enforce multi-factor authentication on VPNs, cloud platforms, admin interfaces, and sensitive applications. Verify enforcement via identity provider dashboards (e.g., Azure AD, Okta).
+
+  - id: A8.3.9
+    description: Are access logs maintained for critical information systems and regularly reviewed?
+    type: automated
+    help_text: Enable detailed access logging (e.g., login events, file access) on sensitive systems. Send logs to a centralized SIEM platform. Review regularly for anomalies and audit compliance.
+
+  - id: A8.3.10
+    description: Are alerts configured for suspicious or unauthorized access attempts?
+    type: automated
+    help_text: Configure SIEM or security tooling to detect brute-force attempts, unusual access locations, or off-hours logins. Validate alerts are reviewed by a security analyst or SOC.
+
+  - id: A8.3.11
+    description: Is sensitive information encrypted during storage and transmission to prevent unauthorized access?
+    type: automated
+    help_text: Enforce full-disk encryption on laptops, servers, and removable media. Use TLS 1.2+ for transmission. Validate with system configuration scans and penetration testing.
+
+  - id: A8.3.12
+    description: Are encryption keys securely managed to prevent misuse?
+    type: manual
+    help_text: Use enterprise-grade key management systems. Restrict key access to authorized personnel and rotate keys per policy. Maintain audit logs of key use.
+
+  - id: A8.3.13
+    description: Are employees and contractors trained on access control policies and their responsibilities for protecting sensitive information?
+    type: manual
+    help_text: Include access control topics in onboarding and annual security training. Emphasize password hygiene, data handling, and social engineering awareness. Track training completion and effectiveness.
