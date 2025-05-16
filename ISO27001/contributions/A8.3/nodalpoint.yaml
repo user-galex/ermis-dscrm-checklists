@@ -1,0 +1,25 @@
+control: A.8.3
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2025-05-16
+contributions:
+  - checklist_item_id: A8.3.2
+    notes: "Access to GitHub repositories, CI/CD pipelines, and infrastructure secrets is based on role (e.g., developer, SRE, release engineer) defined in our internal IAM system."
+
+  - checklist_item_id: A8.3.3
+    notes: "Access to customer data and production environments requires documented business justification and approval from both the engineering manager and security team. Requests are processed via Jira and linked to onboarding documentation."
+
+  - checklist_item_id: A8.3.5
+    notes: "Offboarding workflows are integrated with our Jira platform. As soon as a user’s status changes (e.g., termination or role change), access rights are revoked across relevant platforms."
+
+  - checklist_item_id: A8.3.8
+    notes: "MFA is mandatory for all critical platforms. MFA enforcement is verified weekly and alerts are raised for non-compliant accounts."
+
+  - checklist_item_id: A8.3.9
+    notes: "Access logs from production systems and developer tools are forwarded to our central logging system (Elastic stack). Logs are reviewed by the DevSecOps team biweekly for anomalies."
+
+  - checklist_item_id: A8.3.11
+    notes: "All customer data is encrypted in transit using TLS 1.3 and at rest using AES-256 encryption. Disk-level encryption is enforced on developer laptops using FileVault for macOS and BitLocker for Windows."
+
+  - checklist_item_id: A8.3.13
+    notes: "All new employees complete a security awareness training module that includes access control responsibilities and data classification practices."
