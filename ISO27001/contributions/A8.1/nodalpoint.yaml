@@ -1,0 +1,23 @@
+control: A.8.1
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2025-05-16
+contributions:
+  - checklist_item_id: A8.1.1
+    notes: "We use Lansweeper to automatically discover and update the endpoint inventory. Every endpoint is tagged with department, location, and assigned user via AD integration."
+
+  - checklist_item_id: A8.1.3
+    notes: "All Windows endpoints are protected by Microsoft Defender for Endpoint. Compliance reports are available through the Endpoint Security dashboard."
+
+  - checklist_item_id: A8.1.5
+    notes: "Multi-factor authentication is required on all devices using YubiKey.
+
+  - checklist_item_id: A8.1.6
+    notes: "BitLocker (AES-256) is enforced on all employee laptops via GPO. We use a dedicated, cloud-hosted recovery key vault (Hashicorp Vault)."
+
+  - checklist_item_id: A8.1.9
+    notes: "Lost or stolen devices must be reported within 2 hours via our internal security hotline.""
+
+
+
+
