@@ -1,0 +1,16 @@
+control: A.8.2
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2025-05-16
+contributions:
+  - checklist_item_id: A8.2.1
+    notes: "Privileged accounts, including admin and root accounts on cloud and internal systems, are tracked via our IAM dashboard. Service accounts for CI/CD tools are also included and tagged by purpose."
+
+  - checklist_item_id: A8.2.2
+    notes: "All privileged access requires submission of an access request form through our internal Jira-based approval workflow. Business justification and team lead approval are mandatory."
+
+  - checklist_item_id: A8.2.5
+    notes: "MFA is enforced on all admin-level accounts using Yubi key."
+
+  - checklist_item_id: A8.2.11
+    notes: "Quarterly access reviews are conducted with DevOps and Engineering leads using exportable reports from our IAM platform. Orphaned or unused accounts are flagged and removed within 7 days."
