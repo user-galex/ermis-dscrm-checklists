@@ -1,0 +1,62 @@
+control_id: A.8.21
+title: Security of Network Services
+checklist_items:
+  - id: A8.21.1
+    description: Is there a comprehensive inventory of all network services (e.g., DNS, email, VPN, cloud services), categorized based on criticality and sensitivity?
+    type: manual
+    help_text: Maintain a documented inventory of all internal and third-party services. Categorize each service (e.g., core infra, user-facing, cloud-hosted) and tag by criticality, data exposure, and availability needs.
+
+  - id: A8.21.2
+    description: Are service-level agreements (SLAs) in place for internal and third-party network services?
+    type: manual
+    help_text: Establish SLAs that define performance, availability, and security expectations for all network service providers, including internal IT teams and vendors.
+
+  - id: A8.21.3
+    description: Do SLAs include specific security requirements, such as uptime, encryption, and access control?
+    type: manual
+    help_text: Ensure SLAs cover encryption in transit, MFA or RBAC enforcement, incident response timelines, and breach notification clauses. Review regularly with vendors.
+
+  - id: A8.21.4
+    description: Are access controls enforced to restrict who can use and manage network services?
+    type: manual
+    help_text: Use role-based access, identity federation, and approval workflows to control admin and user access to services (e.g., DNS admin panels, email gateways, VPN appliances).
+
+  - id: A8.21.5
+    description: Is data transmitted over network services encrypted using secure protocols (e.g., TLS, IPSec)?
+    type: automated
+    help_text: Enforce TLS 1.2+ or IPSec for all data in transit over internal and external network services. Block insecure services (e.g., FTP, POP3 without encryption).
+
+  - id: A8.21.6
+    description: Are outdated or insecure protocols (e.g., SSL, Telnet) disabled?
+    type: automated
+    help_text: Disable deprecated protocols and ports across network services. Regularly scan for legacy services and ensure configuration baselines exclude known-vulnerable options.
+
+  - id: A8.21.7
+    description: Are logs maintained for all critical network services, including access, usage, and anomalies?
+    type: automated
+    help_text: Configure logging for services such as DNS, DHCP, VPN, SMTP, and cloud consoles. Store logs centrally in a SIEM or logging platform with searchable retention.
+
+  - id: A8.21.8
+    description: Are network services regularly assessed for vulnerabilities?
+    type: automated
+    help_text: Scan exposed and internal services with vulnerability scanners (e.g., Nessus, Qualys, OpenVAS). Prioritize remediation based on criticality and exposure.
+
+  - id: A8.21.9
+    description: Are network services segregated based on their function and sensitivity (e.g., production, test, and guest environments)?
+    type: manual
+    help_text: Segment services by environment using VLANs, VRFs, or security groups. Ensure test/dev services cannot reach production. Apply firewall or routing rules accordingly.
+
+  - id: A8.21.10
+    description: Are network services integrated into the organization’s incident response plan?
+    type: manual
+    help_text: Define detection, triage, and escalation procedures for outages or compromises of critical services. Ensure the IR team has contact info and logs for all key services.
+
+  - id: A8.21.11
+    description: Are critical network service configurations backed up regularly?
+    type: automated
+    help_text: Backup configurations of firewalls, VPNs, routers, DNS, and mail servers. Automate versioned backups where possible and store securely with access control.
+
+  - id: A8.21.12
+    description: Are employees and administrators trained on securely managing and using network services?
+    type: manual
+    help_text: Provide administrators with role-specific training on secure configuration, patching, and access management. Train users on safe VPN, email, and cloud service usage.

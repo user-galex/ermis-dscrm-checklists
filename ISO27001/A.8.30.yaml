@@ -1,0 +1,62 @@
+control_id: A.8.30
+title: Outsourced Development
+checklist_items:
+  - id: A8.30.1
+    description: Is there a documented policy governing outsourced development activities, including security requirements, roles, and responsibilities for managing third-party developers?
+    type: manual
+    help_text: The policy should define vendor onboarding, secure coding expectations, access restrictions, audit rights, and compliance obligations for any third-party engaged in development.
+
+  - id: A8.30.2
+    description: Are security risk assessments conducted for all third-party development vendors before engagement?
+    type: manual
+    help_text: Perform due diligence and assess risks related to data exposure, regulatory compliance, IP theft, and geographic location. Use standard vendor risk frameworks.
+
+  - id: A8.30.3
+    description: Are vendors evaluated for their adherence to industry security standards (e.g., ISO 27001, SOC 2)?
+    type: manual
+    help_text: Review vendor certifications, audit reports, or security questionnaires. Give preference to vendors with externally validated controls (e.g., SOC 2 Type II, ISO 27001).
+
+  - id: A8.30.4
+    description: Do contracts with third-party developers include explicit security requirements, including clauses to enforce data protection, confidentiality, and intellectual property rights?
+    type: manual
+    help_text: Ensure contracts include clauses on data handling, breach notification, audit rights, code ownership, liability, and return or destruction of data/code at contract end.
+
+  - id: A8.30.5
+    description: Is access to organizational systems, code repositories, and data limited to authorized third-party personnel?
+    type: manual
+    help_text: Use fine-grained access controls (e.g., role-based, time-limited accounts) and separate environments or VPCs for third-party developers. Log all access activities.
+
+  - id: A8.30.6
+    description: Are access rights reviewed and revoked promptly when no longer required?
+    type: manual
+    help_text: Monitor access lifecycle for contractors and vendors. Implement auto-expiry, periodic reviews, and immediate revocation upon offboarding or project completion.
+
+  - id: A8.30.7
+    description: Are code reviews conducted on all code developed by third parties to ensure it meets security and quality standards?
+    type: manual
+    help_text: Require internal code owners to review outsourced contributions before merging. Apply the same SAST, quality checks, and peer review standards as internal code.
+
+  - id: A8.30.8
+    description: Are security tests (e.g., SAST, DAST, penetration tests) performed on outsourced code before acceptance?
+    type: automated
+    help_text: Integrate security testing into acceptance criteria for third-party deliverables. Include SAST/DAST tools, manual review, and penetration testing if applicable.
+
+  - id: A8.30.9
+    description: Are third-party development environments required to meet organizational security standards?
+    type: manual
+    help_text: Specify minimum requirements for IDEs, operating systems, patching, encryption, endpoint protection, and network isolation. Validate via vendor audits or attestations.
+
+  - id: A8.30.10
+    description: Are third-party development activities monitored for compliance with security requirements?
+    type: manual
+    help_text: Monitor project progress, development logs, access activity, and deliverables. Use dashboards or periodic reviews to assess compliance and remediate gaps.
+
+  - id: A8.30.11
+    description: Are sensitive data provided to third-party developers anonymized or masked?
+    type: manual
+    help_text: Use synthetic or masked datasets when development or testing requires data access. Prohibit use of real production data unless absolutely necessary and documented.
+
+  - id: A8.30.12
+    description: Are exit procedures in place to securely terminate relationships with third-party developers?
+    type: manual
+    help_text: Include contractually binding offboarding procedures: revocation of credentials, secure deletion or return of data/code, and closure of access logs and artifacts.

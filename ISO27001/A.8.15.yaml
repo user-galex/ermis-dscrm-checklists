@@ -1,0 +1,62 @@
+control_id: A.8.15
+title: Logging
+checklist_items:
+  - id: A8.15.1
+    description: Is there a documented policy that defines the scope, purpose, and responsibilities for logging activities?
+    type: manual
+    help_text: The logging policy should define which systems must generate logs, what events to capture, retention requirements, and responsibilities for review, maintenance, and security of logs.
+
+  - id: A8.15.2
+    description: Are logs enabled on all critical systems, including servers, applications, network devices, and endpoints?
+    type: automated
+    help_text: Confirm that logging is enabled for authentication, authorization, file access, process execution, and system changes across servers, routers, firewalls, applications, and workstations.
+
+  - id: A8.15.3
+    description: Do logs capture relevant details such as timestamps, user actions, system events, and error messages?
+    type: automated
+    help_text: Validate that log formats include event type, source, user ID, timestamp, action taken, and result. Avoid overly verbose logging that may obscure critical events.
+
+  - id: A8.15.4
+    description: Are logs timestamped accurately and synchronized across all systems using a reliable time source (e.g., NTP)?
+    type: automated
+    help_text: Use Network Time Protocol (NTP) to synchronize system clocks. Ensure time drift is monitored and corrected automatically across infrastructure.
+
+  - id: A8.15.5
+    description: Are time zones and formats standardized for consistency in log entries?
+    type: manual
+    help_text: Standardize on a universal format (e.g., UTC, ISO 8601). Ensure all systems log events with consistent granularity and timestamp formats to support correlation across sources.
+
+  - id: A8.15.6
+    description: Is access to logs restricted to authorized personnel only?
+    type: manual
+    help_text: Limit access to log files and logging systems using RBAC, and ensure system administrators cannot alter logs without detection. Log access events separately if supported.
+
+  - id: A8.15.7
+    description: Are log files protected from unauthorized modification or deletion?
+    type: automated
+    help_text: Configure logs to be append-only or write-once using operating system controls, file integrity monitoring, or WORM storage. Use checksums or hash validation where possible.
+
+  - id: A8.15.8
+    description: Is there a defined retention policy specifying how long logs must be stored (e.g., 90 days, 1 year)?
+    type: manual
+    help_text: Document log retention durations based on regulatory requirements and business needs. Automate archival or secure deletion of logs past their retention date.
+
+  - id: A8.15.9
+    description: Are logs consolidated in a centralized logging system or Security Information and Event Management (SIEM) platform?
+    type: automated
+    help_text: Use centralized tools like ELK Stack, Splunk, Graylog, or a cloud-native SIEM (e.g., Microsoft Sentinel) to collect, correlate, and analyze logs from distributed systems.
+
+  - id: A8.15.10
+    description: Are logs reviewed regularly for anomalies, suspicious activity, or performance issues?
+    type: manual
+    help_text: Perform manual log reviews on a scheduled basis (e.g., weekly or monthly), focusing on key systems and security events. Combine with automated anomaly detection where possible.
+
+  - id: A8.15.11
+    description: Are automated alerts configured to notify administrators of critical events (e.g., unauthorized access attempts)?
+    type: automated
+    help_text: Set alert rules in the SIEM or log monitoring platform for high-risk indicators such as failed logins, privilege escalation, or disabled security controls. Integrate with ticketing systems or SOC workflows.
+
+  - id: A8.15.12
+    description: Are logs comprehensive enough to provide an audit trail for key activities (e.g., user access, system changes, security events)?
+    type: manual
+    help_text: Periodically verify that log coverage supports investigation and forensic needs. Confirm that user access, system configuration changes, and security events are traceable across systems.

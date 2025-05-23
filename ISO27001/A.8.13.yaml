@@ -1,0 +1,67 @@
+control_id: A.8.13
+title: Information Backup
+checklist_items:
+  - id: A8.13.1
+    description: Is there a documented backup policy defining the scope, frequency, retention, and responsibilities for information backups, addressing different types of data (e.g., critical, sensitive, non-sensitive)?
+    type: manual
+    help_text: Ensure a formal policy exists defining backup schedules (e.g., daily, weekly, real-time), responsible roles, classification tiers, encryption requirements, and retention periods for various data types.
+
+  - id: A8.13.2
+    description: Are backups performed regularly, with frequencies appropriate to the criticality of the data (e.g., daily, weekly, real-time)?
+    type: automated
+    help_text: Verify backup jobs are configured for all systems in line with their criticality. For example, databases may require daily full and hourly incremental backups, while non-critical file shares may follow a weekly cadence.
+
+  - id: A8.13.3
+    description: Are transaction logs backed up frequently for databases requiring point-in-time recovery?
+    type: automated
+    help_text: Confirm that transaction logs for critical databases (e.g., PostgreSQL, SQL Server, Oracle) are backed up every few minutes and retained until a full backup confirms successful point-in-time recovery.
+
+  - id: A8.13.4
+    description: Are all critical systems, applications, and data identified and included in the backup scope?
+    type: manual
+    help_text: Maintain a current inventory of critical systems and confirm they are covered in backup configurations. Include business-critical databases, cloud services, VMs, and endpoints where applicable.
+
+  - id: A8.13.5
+    description: Are backups periodically tested to ensure they can be successfully restored and are free from corruption?
+    type: manual
+    help_text: Perform restore tests monthly or quarterly using randomly selected backup sets. Validate both data integrity and functional recovery. Document test results and remediation actions.
+
+  - id: A8.13.6
+    description: Are backups stored securely, with access restricted to authorized personnel only?
+    type: automated
+    help_text: Enforce RBAC or IAM policies for backup repositories. Use audit logs to track who accessed or modified backup data and configuration settings.
+
+  - id: A8.13.7
+    description: Are backups stored in multiple locations, including offsite or cloud storage, to ensure disaster recovery?
+    type: manual
+    help_text: Ensure at least one copy of critical data is stored offsite or in the cloud. Use different geographic zones or providers to reduce the risk of localized failures.
+
+  - id: A8.13.8
+    description: Are backups of sensitive or critical information encrypted both at rest and during transmission?
+    type: automated
+    help_text: Use AES-256 encryption for backup data at rest and TLS for transfers. Ensure encryption is configured in backup tools and validate encryption status for stored archives.
+
+  - id: A8.13.9
+    description: Are encryption keys stored securely and separately from the backup data?
+    type: manual
+    help_text: Manage encryption keys via HSM or cloud key management services (e.g., AWS KMS, Azure Key Vault). Ensure access to keys is limited and monitored separately from backup repositories.
+
+  - id: A8.13.10
+    description: Are backups retained for a duration defined by the organization’s policy and regulatory requirements?
+    type: manual
+    help_text: Align retention periods with legal and business requirements. Maintain a documented backup retention schedule and configure automatic expiration/deletion where supported.
+
+  - id: A8.13.11
+    description: Are expired backups securely deleted or destroyed to prevent unauthorized access?
+    type: automated
+    help_text: Configure automatic purging of expired backup data using secure deletion methods. For physical media, use certified destruction procedures (e.g., shredding, degaussing).
+
+  - id: A8.13.12
+    description: Are recovery time objectives (RTOs) and recovery point objectives (RPOs) defined and tested?
+    type: manual
+    help_text: Document and communicate RTOs and RPOs for all critical systems. Validate through periodic disaster recovery tests and report deviations or delays for correction.
+
+  - id: A8.13.13
+    description: Are backup processes monitored to detect and resolve failures or anomalies promptly?
+    type: automated
+    help_text: Implement monitoring and alerting for failed or incomplete backup jobs. Configure notifications via dashboard, email, or incident response systems and define escalation paths.

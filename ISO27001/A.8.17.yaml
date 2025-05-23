@@ -1,0 +1,52 @@
+control_id: A.8.17
+title: Clock Synchronization
+checklist_items:
+  - id: A8.17.1
+    description: Is there a documented policy specifying the use of clock synchronization for all relevant systems and devices?
+    type: manual
+    help_text: Establish a policy requiring time synchronization across servers, network devices, and endpoints. Define approved protocols (e.g., NTP), roles, and audit procedures.
+
+  - id: A8.17.2
+    description: Are all systems configured to synchronize their clocks with a reliable and secure time source (e.g., NTP servers)?
+    type: automated
+    help_text: Validate that all devices (servers, workstations, routers, appliances) are configured to sync with internal or external NTP servers. Review group policies or configuration scripts.
+
+  - id: A8.17.3
+    description: Is the chosen time source a trusted and secure reference (e.g., Stratum 1 or Stratum 2 NTP servers)?
+    type: manual
+    help_text: Use high-quality time sources such as national time services, authenticated GPS sources, or cloud-provided NTP servers with low stratum (1 or 2) and redundancy.
+
+  - id: A8.17.4
+    description: Is NTP or a similar protocol implemented for clock synchronization across all relevant systems?
+    type: automated
+    help_text: Ensure NTP, SNTP, or secure time-sync protocols (e.g., chronyd, systemd-timesyncd, Windows Time) are enabled and correctly configured. Disable unauthenticated time sources where possible.
+
+  - id: A8.17.5
+    description: Are all systems configured to use consistent and correct time zones across the organization?
+    type: manual
+    help_text: Standardize on a time zone (e.g., UTC) or clearly define per-region settings. Document and enforce time zone configurations via OS and application settings.
+
+  - id: A8.17.6
+    description: Are timestamps in logs accurate and consistent across all systems and devices?
+    type: automated
+    help_text: Confirm that timestamp formats and log entries are aligned across systems. Use log correlation tests to verify synchronization accuracy in practice (e.g., SIEM, syslog).
+
+  - id: A8.17.7
+    description: Is access to configure system clocks restricted to authorized personnel only?
+    type: manual
+    help_text: Limit clock configuration rights to system administrators using RBAC or policy enforcement (e.g., sudo/root permissions, Group Policy Objects). Audit clock changes where possible.
+
+  - id: A8.17.8
+    description: Are backup or redundant time sources configured to ensure continued clock synchronization in case the primary source fails?
+    type: manual
+    help_text: Define at least two fallback NTP sources to ensure failover continuity. Test failover behavior periodically and monitor sync errors.
+
+  - id: A8.17.9
+    description: Are synchronization configurations and procedures documented and accessible to relevant personnel?
+    type: manual
+    help_text: Maintain system-specific and enterprise-wide documentation on time sync settings, time server configurations, and related network requirements. Store in your IT knowledge base or CMDB.
+
+  - id: A8.17.10
+    description: Are synchronization settings and logs reviewed during routine audits?
+    type: manual
+    help_text: Include time synchronization checks in audit and compliance reviews. Validate that sync logs show consistent updates and no sustained drift. Investigate and remediate anomalies.

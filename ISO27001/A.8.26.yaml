@@ -1,0 +1,67 @@
+control_id: A.8.26
+title: Application Security Requirements
+checklist_items:
+  - id: A8.26.1
+    description: Is there a documented policy outlining security requirements for all applications developed, procured, or deployed?
+    type: manual
+    help_text: The policy should define minimum security baselines for in-house, commercial, and open-source applications, including access control, secure data handling, and update/patching expectations.
+
+  - id: A8.26.2
+    description: Are security requirements identified during the initial stages of application development or procurement?
+    type: manual
+    help_text: Capture security requirements early in functional specifications or vendor assessments. Include them in RFPs, software contracts, or development backlogs.
+
+  - id: A8.26.3
+    description: Are requirements aligned with relevant standards (e.g., OWASP ASVS, ISO 27034) and regulatory obligations?
+    type: manual
+    help_text: Map your application security practices to structured frameworks such as OWASP ASVS or ISO 27034. Include GDPR, HIPAA, or PSD2-specific controls if applicable.
+
+  - id: A8.26.4
+    description: Are role-based access controls (RBAC) implemented to ensure users only have access to necessary application functions?
+    type: manual
+    help_text: Enforce least privilege access using RBAC or ABAC. Use identity federation (e.g., SAML, OIDC) and log access grants and modifications.
+
+  - id: A8.26.5
+    description: Are security measures in place to ensure the confidentiality, integrity, and availability of data processed by the application?
+    type: manual
+    help_text: Ensure end-to-end encryption, integrity checks, input/output validation, backup integration, and load balancing or failover support for high-availability apps.
+
+  - id: A8.26.6
+    description: Are input validation mechanisms implemented to prevent injection attacks (e.g., SQL injection, cross-site scripting)?
+    type: automated
+    help_text: Implement server-side input validation using parameterized queries, whitelisting, and framework-level encoding. Test using SAST/DAST tools.
+
+  - id: A8.26.7
+    description: Are user inputs sanitized and validated both on the client and server sides?
+    type: automated
+    help_text: Validate inputs client-side for usability, but enforce all checks server-side. Sanitize input for HTML, JavaScript, SQL, XML, and JSON contexts.
+
+  - id: A8.26.8
+    description: Are secure communication protocols (e.g., HTTPS, TLS 1.2/1.3) enforced for all data exchanges?
+    type: automated
+    help_text: Enforce HTTPS with strong TLS versions for all public and internal services. Redirect HTTP requests and disable weak cipher suites.
+
+  - id: A8.26.9
+    description: Are certificates properly managed and regularly updated?
+    type: manual
+    help_text: Use certificate lifecycle management systems to track expirations. Automate issuance and renewal (e.g., with ACME/LetsEncrypt or internal PKI).
+
+  - id: A8.26.10
+    description: Are error messages designed to avoid revealing sensitive information about the application or system?
+    type: manual
+    help_text: Configure application and API error messages to be generic in production. Avoid revealing stack traces, file paths, or internal logic.
+
+  - id: A8.26.11
+    description: Are applications subjected to regular security testing, including static (SAST) and dynamic (DAST) application security testing?
+    type: automated
+    help_text: Integrate SAST (e.g., SonarQube, Checkmarx) and DAST (e.g., OWASP ZAP, Burp) into CI/CD pipelines. Run tests pre-release and post-deployment.
+
+  - id: A8.26.12
+    description: Are third-party libraries and dependencies reviewed and regularly scanned for vulnerabilities?
+    type: automated
+    help_text: Use software composition analysis (SCA) tools like Snyk, OWASP Dependency-Check, or native scanners (e.g., npm audit, pip-audit) with CI enforcement.
+
+  - id: A8.26.13
+    description: Are applications deployed using secure practices, such as hardened server configurations and containerization?
+    type: manual
+    help_text: Harden OS and container images, restrict root access, enable runtime security monitoring, and enforce signed image policies in CI/CD and runtime environments.

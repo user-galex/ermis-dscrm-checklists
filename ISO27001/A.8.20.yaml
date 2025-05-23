@@ -1,0 +1,62 @@
+control_id: A.8.20
+title: Networks Security
+checklist_items:
+  - id: A8.20.1
+    description: Is there a documented policy defining network security requirements and responsibilities?
+    type: manual
+    help_text: The policy should outline network protection principles, device security standards, change management procedures, and team responsibilities for maintaining secure network operations.
+
+  - id: A8.20.2
+    description: Does the policy address segmentation, monitoring, and protection against internal and external threats?
+    type: manual
+    help_text: Confirm the policy includes detailed requirements for network zoning, traffic inspection, alerting, and response to unauthorized access from internal and external sources.
+
+  - id: A8.20.3
+    description: Are critical systems and sensitive data segregated from less secure parts of the network (e.g., using VLANs or firewalls)?
+    type: manual
+    help_text: Implement network segmentation using VLANs, DMZs, and subnetting. Place sensitive services (e.g., databases, payment systems) in isolated network zones with limited access paths.
+
+  - id: A8.20.4
+    description: Are firewalls deployed at key network entry and exit points to filter unauthorized traffic?
+    type: automated
+    help_text: Deploy NGFWs or host-based firewalls at internet gateways, internal zones, and cloud boundaries. Enforce allowlist-based rules and review logs for denied traffic events.
+
+  - id: A8.20.5
+    description: Are firewall rules reviewed and updated regularly to align with organizational security policies?
+    type: manual
+    help_text: Review and validate firewall rules quarterly. Remove unused or overly permissive rules and document change approvals.
+
+  - id: A8.20.6
+    description: Are Intrusion Detection Systems (IDS) or Intrusion Prevention Systems (IPS) implemented to monitor network traffic for anomalies?
+    type: automated
+    help_text: Deploy IDS/IPS (e.g., Suricata, Snort, Zeek, or commercial equivalents) to monitor ingress/egress and internal traffic. Integrate alerts into a SIEM or security monitoring platform.
+
+  - id: A8.20.7
+    description: Are alerts from IDS/IPS investigated and acted upon promptly?
+    type: manual
+    help_text: Define alert response workflows. Prioritize and investigate alerts based on severity, and document all incident handling steps in the ticketing or incident response system.
+
+  - id: A8.20.8
+    description: Are network access controls in place to restrict unauthorized devices and users from connecting to the network?
+    type: manual
+    help_text: Use MAC filtering, 802.1X, or endpoint verification to prevent rogue device access. Enforce device registration or provisioning for internal and guest networks.
+
+  - id: A8.20.9
+    description: Is Network Access Control (NAC) implemented to enforce policies for connected devices?
+    type: automated
+    help_text: Use NAC solutions (e.g., Cisco ISE, Aruba ClearPass) to enforce posture checks (e.g., antivirus, OS version) before granting network access. Segment guest and BYOD traffic.
+
+  - id: A8.20.10
+    description: Are wireless networks secured using encryption protocols such as WPA3?
+    type: automated
+    help_text: Enforce WPA3 or WPA2-Enterprise with RADIUS-based authentication. Disable WEP or WPA1. Isolate guest networks and apply usage restrictions.
+
+  - id: A8.20.11
+    description: Is remote access to the network secured using VPNs or Zero Trust Network Access (ZTNA)?
+    type: automated
+    help_text: Secure remote access via VPN (IPSec, SSL) or ZTNA platforms. Require MFA and restrict access to only necessary services or internal apps.
+
+  - id: A8.20.12
+    description: Is network traffic monitored for suspicious activities and potential security incidents?
+    type: automated
+    help_text: Monitor traffic using flow data (e.g., NetFlow), IDS/IPS alerts, anomaly detection, and endpoint telemetry. Feed traffic data into SIEM or NDR solutions for pattern recognition and correlation.

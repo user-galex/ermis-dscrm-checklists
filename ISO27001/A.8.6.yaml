@@ -1,0 +1,52 @@
+control_id: A.8.6
+title: Capacity Management
+checklist_items:
+  - id: A8.6.1
+    description: Is there a documented policy defining how capacity requirements are monitored, planned, and managed?
+    type: manual
+    help_text: Ensure a formal capacity management policy exists that outlines how system resources are monitored, how thresholds are set, and how growth planning is conducted. Review annually and align with IT governance.
+
+  - id: A8.6.2
+    description: Are all critical systems and infrastructure components monitored for resource utilization (e.g., CPU, memory, storage, bandwidth)?
+    type: automated
+    help_text: Deploy infrastructure monitoring tools (e.g., Prometheus, Datadog, Zabbix, CloudWatch) to track utilization across VMs, containers, and databases. Include both on-prem and cloud systems.
+
+  - id: A8.6.3
+    description: Are future capacity requirements forecasted based on historical trends, business growth, and planned projects?
+    type: manual
+    help_text: Perform quarterly or annual capacity planning sessions using historical monitoring data, user growth trends, and project roadmaps. Document forecasts and keep them aligned with budget planning.
+
+  - id: A8.6.4
+    description: Are monitoring tools configured to provide alerts when thresholds are reached?
+    type: automated
+    help_text: Set alert thresholds for key resources (e.g., 80% CPU usage, 90% disk space) and route alerts to the operations team via email, Slack, or incident platforms like PagerDuty.
+
+  - id: A8.6.5
+    description: Are performance baselines established for critical systems to define normal operating capacity?
+    type: manual
+    help_text: Use historical data to define baseline performance profiles for systems (e.g., normal DB response time, average CPU usage). Document these baselines and revisit when architecture changes.
+
+  - id: A8.6.6
+    description: Are redundant systems or failover mechanisms implemented to handle capacity-related failures?
+    type: manual
+    help_text: Implement load balancing, auto-scaling groups, or redundant nodes in high-availability configurations. Ensure systems can handle burst traffic or failover without downtime.
+
+  - id: A8.6.7
+    description: Is resource allocation optimized to prevent overprovisioning or underutilization of systems?
+    type: automated
+    help_text: Use cloud cost analysis tools or workload schedulers to right-size resources. Monitor idle compute/storage and adjust based on usage patterns. Tag resources for cost attribution.
+
+  - id: A8.6.8
+    description: Are there documented procedures for addressing capacity-related incidents or bottlenecks?
+    type: manual
+    help_text: Ensure incident response procedures include steps for handling capacity issues (e.g., service degradation due to memory exhaustion). Define escalation and rollback strategies.
+
+  - id: A8.6.9
+    description: Are agreements with any capacity providers reviewed to ensure they can meet anticipated capacity needs?
+    type: manual
+    help_text: Review cloud service or hosting provider SLAs and service tiers. Ensure contracts support scaling requirements and include provisions for handling growth or demand spikes.
+
+  - id: A8.6.10
+    description: Are capacity management activities documented, including monitoring reports, trend analyses, and forecasts, and reviewed by management?
+    type: manual
+    help_text: Maintain quarterly reports on system utilization and forecasts. Present summaries to IT management and use them to inform procurement or architectural decisions.

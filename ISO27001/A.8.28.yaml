@@ -1,0 +1,67 @@
+control_id: A.8.28
+title: Secure Coding
+checklist_items:
+  - id: A8.28.1
+    description: Is there a documented secure coding policy that defines requirements and guidelines for all developers?
+    type: manual
+    help_text: The policy should cover secure development principles, coding practices, and verification techniques. Include required standards, prohibited functions, and references to code review and testing expectations.
+
+  - id: A8.28.2
+    description: Does the policy align with industry standards such as OWASP Secure Coding Practices or ISO 27034?
+    type: manual
+    help_text: Ensure that the secure coding policy incorporates OWASP ASVS, Top 10, or ISO 27034 controls. Periodically update it to reflect emerging threats and evolving best practices.
+
+  - id: A8.28.3
+    description: Are developers regularly trained on secure coding practices, including the latest threats and mitigation strategies?
+    type: manual
+    help_text: Deliver annual or role-based training covering secure input handling, authentication, session management, and supply chain risks. Track participation and include practical exercises.
+
+  - id: A8.28.4
+    description: Are input validation mechanisms implemented to prevent injection attacks (e.g., SQL injection, command injection)?
+    type: automated
+    help_text: Use server-side validation and parameterized queries. Enforce input length, type, and format constraints. Detect missing validations via static code analysis.
+
+  - id: A8.28.5
+    description: Are inputs sanitized and validated at both the client and server sides?
+    type: automated
+    help_text: Use client-side checks for UX and server-side checks for security. Sanitize untrusted input before rendering or storing. Avoid relying solely on frontend validation.
+
+  - id: A8.28.6
+    description: Are error-handling routines designed to avoid revealing sensitive information in error messages?
+    type: manual
+    help_text: Ensure application errors do not expose stack traces, environment details, or user/session data. Use generic user-facing errors and log technical messages securely.
+
+  - id: A8.28.7
+    description: Are application logs designed to record errors securely without exposing sensitive data?
+    type: manual
+    help_text: Avoid logging PII, credentials, or cryptographic material. Use structured logging formats and mask or redact sensitive fields. Apply access control to log storage.
+
+  - id: A8.28.8
+    description: Are strong authentication mechanisms implemented to ensure secure access?
+    type: manual
+    help_text: Implement MFA, session timeouts, and secure password storage (e.g., bcrypt, PBKDF2). Integrate with identity providers (e.g., OIDC, SAML) where possible.
+
+  - id: A8.28.9
+    description: Are authorization checks performed consistently to prevent privilege escalation?
+    type: manual
+    help_text: Validate access rights on every action or resource. Avoid relying solely on UI-based controls. Use server-side permission checks linked to user roles.
+
+  - id: A8.28.10
+    description: Are tools like Snyk, Dependabot, or OWASP Dependency-Check used to scan for vulnerable dependencies, including third-party libraries?
+    type: automated
+    help_text: Integrate SCA tools into build pipelines to detect CVEs in packages. Block builds or raise alerts on critical issues. Maintain dependency allowlists.
+
+  - id: A8.28.11
+    description: Are static code analysis tools (e.g., SonarQube, Checkmarx) used to detect vulnerabilities in the codebase?
+    type: automated
+    help_text: Run SAST tools automatically on code check-ins or PRs. Use pre-defined rulesets aligned with secure coding standards. Require resolution of high-severity issues before release.
+
+  - id: A8.28.12
+    description: Is a peer review or automated review process in place to identify security flaws before deployment?
+    type: manual
+    help_text: Mandate peer review for all code changes. Use checklists that include security checks. For critical code, enforce dual approvals and sign-offs.
+
+  - id: A8.28.13
+    description: Are secure coding practices integrated into every phase of the SDLC?
+    type: manual
+    help_text: Embed secure coding into planning (requirements), design (threat modeling), development (secure APIs), testing (SAST/DAST), and deployment (hardened CI/CD). Track via DevSecOps metrics.

@@ -1,0 +1,67 @@
+control_id: A.8.29
+title: Security Testing in Development and Acceptance
+checklist_items:
+  - id: A8.29.1
+    description: Is there a documented policy requiring security testing during development and acceptance phases, outlining roles, responsibilities, and types of tests to be performed (e.g., SAST, DAST, penetration testing)?
+    type: manual
+    help_text: The policy should define mandatory security testing activities (e.g., static analysis, dynamic analysis, config validation) per SDLC stage, assigning responsibilities to development, QA, and security teams.
+
+  - id: A8.29.2
+    description: Are security requirements validated during the development and acceptance phases to ensure they are implemented correctly?
+    type: manual
+    help_text: Verify implementation of security requirements through test cases, checklists, and traceability matrices. Include authentication, access control, input validation, and logging requirements.
+
+  - id: A8.29.3
+    description: Are tests designed to verify that the application or system meets specified security requirements?
+    type: manual
+    help_text: Integrate security use cases and misuse cases into test planning. Include tests for common vulnerabilities and custom risks identified during threat modeling.
+
+  - id: A8.29.4
+    description: Are static code analysis tools (e.g., SonarQube, Checkmarx, Fortify) used to detect vulnerabilities in the source code?
+    type: automated
+    help_text: Integrate SAST tools into your CI/CD pipeline. Ensure critical and high-severity issues block builds or require documented risk acceptance.
+
+  - id: A8.29.5
+    description: Are dynamic tests performed to identify vulnerabilities in running applications (e.g., OWASP ZAP, Burp Suite)?
+    type: automated
+    help_text: Run DAST scans in pre-prod environments or staging systems. Focus on injection, authentication flaws, session management, and exposed sensitive data.
+
+  - id: A8.29.6
+    description: Are vulnerabilities and findings from tools remediated and re-tested before acceptance?
+    type: manual
+    help_text: Track each security defect to resolution. Ensure regression testing is performed to confirm proper remediation. Require sign-off before moving to production.
+
+  - id: A8.29.7
+    description: Are penetration tests conducted to simulate real-world attacks and uncover vulnerabilities?
+    type: manual
+    help_text: Schedule internal or third-party pen tests on major releases or annually. Cover network, application, and API layers. Use findings to inform threat models and control hardening.
+
+  - id: A8.29.8
+    description: Are configurations of systems, applications, and environments tested to ensure alignment with security baselines?
+    type: manual
+    help_text: Compare system configurations against hardened templates (e.g., CIS Benchmarks). Include checks for secure protocols, logging, patch levels, and service restrictions.
+
+  - id: A8.29.9
+    description: Are unnecessary services, ports, and default settings reviewed and disabled?
+    type: manual
+    help_text: Scan deployed systems for open ports and default services. Disable or remove default accounts, sample code, debug tools, and unused services before go-live.
+
+  - id: A8.29.10
+    description: Are third-party components, libraries, and APIs scanned for known vulnerabilities?
+    type: automated
+    help_text: Use SCA tools (e.g., Snyk, OWASP Dependency-Check) to monitor CVEs in dependencies. Integrate alerts into CI/CD and prioritize remediation of critical findings.
+
+  - id: A8.29.11
+    description: Are security tests conducted in isolated environments to prevent disruption to production systems?
+    type: manual
+    help_text: Ensure all testing (e.g., pen testing, fuzzing, DAST) is performed in non-production environments that mirror production where feasible. Isolate data and services.
+
+  - id: A8.29.12
+    description: Are test environments configured to mimic production settings closely?
+    type: manual
+    help_text: Align configurations (e.g., OS, database, middleware, IAM) with production. Use anonymized or masked data where live datasets are required.
+
+  - id: A8.29.13
+    description: Are clear security acceptance criteria defined and documented?
+    type: manual
+    help_text: Define acceptance criteria such as “no critical vulnerabilities,” “SAST/DAST passed,” or “security controls verified.” Require sign-off by security or QA before go-live.

@@ -1,0 +1,57 @@
+control_id: A.8.12
+title: Data Leakage Prevention
+checklist_items:
+  - id: A8.12.1
+    description: Is there a documented policy outlining the prevention of data leakage, including the scope, responsibilities and acceptable use of data?
+    type: manual
+    help_text: The policy should define acceptable use, roles, scope of data protection efforts, and behavioral expectations for users. It should align with broader information security and data classification policies.
+
+  - id: A8.12.2
+    description: Are sensitive data assets identified and classified based on confidentiality, integrity, and availability requirements?
+    type: manual
+    help_text: Maintain a classification scheme for assets (e.g., Public, Internal, Confidential, Restricted). Use it to drive protective measures and prioritize DLP rules based on criticality.
+
+  - id: A8.12.3
+    description: Are DLP tools deployed to monitor, detect, and prevent unauthorized data transfers?
+    type: automated
+    help_text: Deploy DLP software at the network (e.g., firewalls, proxies), endpoint, and email levels. Configure rules to detect keywords, file types, or data patterns (e.g., PII, credit card numbers).
+
+  - id: A8.12.4
+    description: Are role-based access controls (RBAC) implemented to ensure only authorized users can access or transfer sensitive data?
+    type: manual
+    help_text: Use IAM systems to enforce RBAC for access to shared folders, data exports, and email systems. Review roles regularly and audit usage patterns for anomalies.
+
+  - id: A8.12.5
+    description: Are endpoint DLP agents installed on workstations and laptops to monitor and block unauthorized data transfers?
+    type: automated
+    help_text: Install endpoint DLP agents (e.g., Symantec DLP, Microsoft Purview, Forcepoint) to monitor clipboard use, print actions, file transfers, and removable media usage.
+
+  - id: A8.12.6
+    description: Are USB ports and other removable media usage restricted or monitored?
+    type: automated
+    help_text: Restrict or block USB port access through group policy, endpoint agents, or EDR tools. Allow only encrypted, company-managed devices when needed. Monitor and log all usage.
+
+  - id: A8.12.7
+    description: Is network traffic monitored for unauthorized data transmissions, including encrypted channels?
+    type: automated
+    help_text: Use DLP-aware firewalls, proxies, or IDS/IPS systems to inspect outbound traffic. Enable SSL/TLS inspection for HTTPS traffic where legally permissible.
+
+  - id: A8.12.8
+    description: Are rules in place to block access to unauthorized cloud storage services or file-sharing platforms?
+    type: automated
+    help_text: Use web filtering, DNS control, or CASB tools to block services like WeTransfer, Dropbox, or unapproved Google Drive access. Maintain a whitelist of business-approved platforms.
+
+  - id: A8.12.9
+    description: Are outbound emails scanned for sensitive data, and are rules enforced to block unauthorized sharing?
+    type: automated
+    help_text: Configure DLP rules in email systems (e.g., Microsoft 365, Google Workspace) to scan for sensitive content (e.g., SSNs, financial info) and block or encrypt messages as needed.
+
+  - id: A8.12.10
+    description: Are procedures in place to investigate, respond to, and document DLP alerts or violations?
+    type: manual
+    help_text: Define workflows for alert triage, user notification, incident investigation, and escalation. Document alerts in a ticketing system and include resolution notes for audits.
+
+  - id: A8.12.11
+    description: Are employees educated on the risks of data leakage and their responsibilities in preventing it?
+    type: manual
+    help_text: Include data leakage topics in onboarding and refresher training. Teach employees how to identify risky behavior, report incidents, and follow secure file sharing practices.

@@ -1,0 +1,52 @@
+control_id: A.8.9
+title: Configuration Management
+checklist_items:
+  - id: A8.9.1
+    description: Is there a documented configuration management policy that defines the procedures for creating, updating, and maintaining system configurations?
+    type: manual
+    help_text: Ensure a written policy exists covering configuration creation, versioning, approval, deployment, rollback, and audit. Include reference to environments (dev/test/prod) and change windows.
+
+  - id: A8.9.2
+    description: Are secure baseline configurations established for all systems, devices, and applications?
+    type: manual
+    help_text: Create and document hardened configuration baselines (e.g., CIS Benchmarks, vendor hardening guides) for each OS, device type, or application stack. Store in version control and review annually.
+
+  - id: A8.9.3
+    description: Is there a formal change control process in place to manage updates to system configurations?
+    type: manual
+    help_text: Use a structured change management workflow (e.g., CAB, Jira-based) requiring risk assessment, approvals, rollback plans, and documentation for each config change.
+
+  - id: A8.9.4
+    description: Are system configurations documented and maintained, including network diagrams, software versions, and device settings?
+    type: manual
+    help_text: Maintain up-to-date records of infrastructure components, including diagrams, IP schemes, application version lists, and device configurations. Store centrally in a CMDB or secure repository.
+
+  - id: A8.9.5
+    description: Are configurations monitored for unauthorized changes using automated tools or manual processes?
+    type: automated
+    help_text: Use tools such as Tripwire, OSSEC, or GitOps pipelines to detect config drift or unauthorized changes. Alert security or ops teams if deviations are detected from baseline.
+
+  - id: A8.9.6
+    description: Are configuration files regularly backed up and securely stored?
+    type: automated
+    help_text: Schedule secure backups of critical configuration files. Store backups in encrypted storage (on-prem or cloud) with version history and restricted access.
+
+  - id: A8.9.7
+    description: Are automated configuration management tools (e.g., Ansible, Puppet, Chef) used to deploy and maintain consistent configurations across systems?
+    type: automated
+    help_text: Use infrastructure-as-code or configuration automation tools to enforce and reapply baselines. Store playbooks or manifests in version control and test before deployment.
+
+  - id: A8.9.8
+    description: Are access rights to configuration files and tools restricted to authorized personnel?
+    type: manual
+    help_text: Limit access to configuration management tools and sensitive config files using RBAC, IAM policies, and OS file permissions. Review access control lists quarterly.
+
+  - id: A8.9.9
+    description: Are configurations checked for vulnerabilities as part of the organization's vulnerability management process?
+    type: automated
+    help_text: Integrate config scanning (e.g., CIS-CAT, Lynis, AWS Config rules) into vulnerability assessments. Flag insecure or misconfigured services and route them to the remediation workflow.
+
+  - id: A8.9.10
+    description: Are incidents related to configuration changes (e.g., outages, unauthorized modifications) documented and investigated?
+    type: manual
+    help_text: Include config-related events in the incident response process. Log the cause, impact, corrective actions, and whether change control was bypassed. Review for process improvements.

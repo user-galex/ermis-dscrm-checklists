@@ -1,0 +1,77 @@
+control_id: A.8.4
+title: Access to Source Code
+checklist_items:
+  - id: A8.4.1
+    description: Are all source code repositories protected by strong authentication mechanisms (e.g., multi-factor authentication)?
+    type: automated
+    help_text: Enforce MFA for all code repository platforms (e.g., GitHub, GitLab, Bitbucket). Integrate with SSO and verify enforcement regularly via IAM or provider security dashboards.
+
+  - id: A8.4.2
+    description: Is access to repositories restricted to authorized personnel only?
+    type: manual
+    help_text: Access should be based on job function and least privilege principles. Review repository-level permissions and use team-based role assignments (e.g., GitHub Teams).
+
+  - id: A8.4.3
+    description: Are there documented policies and procedures for managing access to source code?
+    type: manual
+    help_text: Policies should cover access provisioning, deprovisioning, emergency access, and periodic reviews. Include requirements for MFA, approval, and logging.
+
+  - id: A8.4.4
+    description: Is there a formal approval process for granting access to source code repositories?
+    type: manual
+    help_text: Require written or ticketed approval from team leads or security admins. Store approval records in issue tracking or IAM systems.
+
+  - id: A8.4.5
+    description: Are access requests and approvals documented and retained for auditing purposes?
+    type: manual
+    help_text: Use service desk systems (e.g., Jira, ServiceNow) or IAM logs to track all access requests and decisions. Ensure logs are retained for at least 12 months.
+
+  - id: A8.4.6
+    description: Are user access rights to source code repositories periodically reviewed (e.g., quarterly)?
+    type: manual
+    help_text: Conduct quarterly access reviews involving team leads and system owners. Remove stale accounts or unused access roles.
+
+  - id: A8.4.7
+    description: Is access to sensitive source code segregated from access to production environments?
+    type: manual
+    help_text: Ensure different roles and access controls are enforced between source control platforms and production systems. Developers should not have direct access to production data or servers.
+
+  - id: A8.4.8
+    description: Are development, testing, and production environments properly isolated?
+    type: manual
+    help_text: Use separate networks, credentials, and identity domains for dev/test/prod. Limit cross-environment access to CI/CD pipelines with approval and logging.
+
+  - id: A8.4.9
+    description: Are all actions in source code repositories (e.g., access, edits, deletions) logged and monitored?
+    type: automated
+    help_text: Enable and retain detailed audit logs from the version control system. Monitor events such as pull, push, delete, permission changes, and unusual commit activity.
+
+  - id: A8.4.10
+    description: Is a secure version control system in place to track changes made to source code?
+    type: automated
+    help_text: Use Git-based version control systems with enforced branch protection rules, commit signing (if possible), and proper access auditing.
+
+  - id: A8.4.11
+    description: Are changes reviewed and approved before being committed to the repository?
+    type: manual
+    help_text: Require pull requests (PRs) or merge requests (MRs) with at least one reviewer. Enforce via branch protection or CI rules to prevent direct commits to main branches.
+
+  - id: A8.4.12
+    description: Are secure channels (e.g., encrypted protocols like SSH, HTTPS) used for accessing or transferring source code?
+    type: automated
+    help_text: Only allow repository access over encrypted connections (SSH keys, HTTPS with strong TLS). Disable Git access over plaintext or legacy protocols.
+
+  - id: A8.4.13
+    description: Are code review practices implemented to ensure that changes to the source code are validated and secure?
+    type: manual
+    help_text: Require reviewers to validate functionality, style, and security aspects during code review. Track code review coverage and effectiveness in project metrics.
+
+  - id: A8.4.14
+    description: Are peer reviews or automated tools used to identify vulnerabilities in source code?
+    type: automated
+    help_text: Use static analysis tools (e.g., SonarQube, CodeQL, Snyk) as part of the CI pipeline. Track results and remediation metrics over time.
+
+  - id: A8.4.15
+    description: Are developers trained on secure coding practices and their responsibilities for protecting source code?
+    type: manual
+    help_text: Provide annual secure development training tailored to your tech stack. Include modules on OWASP Top 10, secure Git usage, and credential hygiene. Track participation and test knowledge.

@@ -1,0 +1,57 @@
+control_id: A.8.5
+title: Secure Authentication
+checklist_items:
+  - id: A8.5.1
+    description: Is there a documented authentication policy specifying secure practices for all systems and applications?
+    type: manual
+    help_text: Ensure a formal authentication policy exists covering password standards, MFA, session handling, device trust, and secure login processes. The policy should be reviewed annually and referenced during audits and onboarding.
+
+  - id: A8.5.2
+    description: Is MFA implemented for access to critical systems, applications, and sensitive data?
+    type: automated
+    help_text: Enforce multi-factor authentication for admin interfaces, cloud platforms, VPNs, and applications with sensitive data. Supported methods include app-based TOTP, hardware tokens, or biometric devices.
+
+  - id: A8.5.3
+    description: Are password policies enforced for all users, including length, complexity, and rotation requirements?
+    type: automated
+    help_text: Enforce password policies via IAM or directory services (e.g., AD, Okta). Require minimum 12-character passwords, complexity (e.g., upper/lower/number/symbol), and rotation or breach detection (e.g., through Have I Been Pwned integrations).
+
+  - id: A8.5.4
+    description: Are passwords stored securely using cryptographic hashing algorithms (e.g., bcrypt, PBKDF2)?
+    type: manual
+    help_text: Review application and identity provider settings to confirm password hashes use salted and adaptive algorithms like bcrypt, scrypt, or PBKDF2. Avoid outdated methods like MD5 or SHA1.
+
+  - id: A8.5.5
+    description: Are account lockout mechanisms in place to prevent brute-force attacks after a predefined number of failed login attempts?
+    type: automated
+    help_text: Configure authentication systems to lock or delay login after 5–10 failed attempts. Use progressive delay or temporary bans and notify users or administrators of repeated failures.
+
+  - id: A8.5.6
+    description: Are user sessions automatically logged out after a defined period of inactivity?
+    type: automated
+    help_text: Enforce session timeout policies (e.g., 15–30 minutes of inactivity) across web apps, terminals, and remote access portals. Configure idle timeout in both application and identity layers.
+
+  - id: A8.5.7
+    description: Are session tokens encrypted and protected against interception or replay attacks?
+    type: automated
+    help_text: Use secure session cookies (Secure, HttpOnly, SameSite) and TLS 1.2+ for transport. Implement anti-replay and token expiration logic. Use signed JWTs or secure OAuth tokens.
+
+  - id: A8.5.8
+    description: Are authentication mechanisms, such as single sign-on (SSO) or federated identity systems, securely configured?
+    type: manual
+    help_text: Use SAML 2.0, OIDC, or OAuth 2.0 with strong certificate management. Restrict SSO trust relationships to known identity providers and audit claims and session attributes regularly.
+
+  - id: A8.5.9
+    description: Is device-based authentication (e.g., trusted devices, certificates) used where applicable?
+    type: manual
+    help_text: Enforce device trust via endpoint certificates, managed device checks, or UEM platforms (e.g., Intune, Jamf). Restrict access from unmanaged or unknown devices.
+
+  - id: A8.5.10
+    description: Are authentication attempts logged for all systems, including successful and failed attempts?
+    type: automated
+    help_text: Collect login events (both success and failure) in centralized logging systems. Correlate failed attempts with alert thresholds and monitor privileged account logins separately.
+
+  - id: A8.5.11
+    description: Are users trained on secure authentication practices (e.g., creating strong passwords, recognizing phishing attempts)?
+    type: manual
+    help_text: Include authentication hygiene and phishing awareness in mandatory security training. Provide ongoing reinforcement via simulated phishing campaigns or micro-learning modules.

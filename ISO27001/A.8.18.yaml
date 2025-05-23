@@ -1,0 +1,57 @@
+control_id: A.8.18
+title: Use of Privileged Utility Programs
+checklist_items:
+  - id: A8.18.1
+    description: Is there an up-to-date inventory of all privileged utility programs in use (e.g., administrative tools, diagnostic utilities)?
+    type: manual
+    help_text: Maintain a documented inventory of all utilities that allow privileged actions (e.g., registry editors, packet sniffers, backup tools). Include version, location, and owner.
+
+  - id: A8.18.2
+    description: Is access to privileged utility programs restricted to authorized personnel only (e.g., using role-based-access)?
+    type: manual
+    help_text: Use RBAC, Active Directory groups, or PAM solutions to restrict access. Assign access based on job function and enforce least privilege principles.
+
+  - id: A8.18.3
+    description: Are multi-factor authentication (MFA) and strong password policies enforced for accessing privileged utilities?
+    type: automated
+    help_text: Require MFA for all administrative tools and consoles, including CLI and GUI access. Enforce complex passwords with expiration and reuse prevention policies.
+
+  - id: A8.18.4
+    description: Are approvals required before granting access to privileged utility programs?
+    type: manual
+    help_text: Implement an access request workflow where managers or system owners must approve elevated access. Retain records of requests and justifications.
+
+  - id: A8.18.5
+    description: Are all activities performed using privileged utility programs logged and monitored?
+    type: automated
+    help_text: Capture session logs, command execution logs, or screen recordings where possible. Integrate logs into SIEM or auditing systems for real-time and retrospective analysis.
+
+  - id: A8.18.6
+    description: Are privileged utility programs restricted to predefined tasks and systems?
+    type: manual
+    help_text: Limit tools to authorized hosts and use cases. Disable or uninstall unused utilities on non-admin systems. Use allowlists or PAM rules for runtime restrictions.
+
+  - id: A8.18.7
+    description: Are procedures in place to grant temporary access to privileged utilities for specific tasks?
+    type: manual
+    help_text: Define time-limited access workflows using tools like Just-In-Time (JIT) access provisioning or expiring group memberships. Require clear justification for temporary elevation.
+
+  - id: A8.18.8
+    description: Are privileged utility programs configured securely to prevent misuse (e.g., disabling insecure features)?
+    type: manual
+    help_text: Review tool configurations to disable risky or legacy features (e.g., unauthenticated access, scripting interfaces, remote debugging). Harden with vendor best practices or security benchmarks.
+
+  - id: A8.18.9
+    description: Are changes to privileged utility programs (e.g., updates, installations) reviewed and approved through a formal change management process?
+    type: manual
+    help_text: Apply change control procedures for adding, removing, or updating utilities. Review for impact, test in non-production, and document approvals in the change log.
+
+  - id: A8.18.10
+    description: Are employees with access to privileged utilities trained on secure usage practices and the risks associated with misuse?
+    type: manual
+    help_text: Deliver role-specific training covering secure tool usage, abuse scenarios, auditing expectations, and incident handling. Refresh training annually or after policy updates.
+
+  - id: A8.18.11
+    description: Is access to privileged utility programs reviewed periodically to ensure appropriateness?
+    type: manual
+    help_text: Conduct quarterly or semi-annual reviews of all users with access to privileged tools. Validate business justification and revoke access that is no longer required.

@@ -1,0 +1,52 @@
+control_id: A.8.23
+title: Web Filtering
+checklist_items:
+  - id: A8.23.1
+    description: Is there a documented web filtering policy specifying acceptable use of internet resources, and defining categories of websites or content to be blocked?
+    type: manual
+    help_text: The policy should define allowed and prohibited content categories (e.g., adult, gambling, malware), usage expectations, exception procedures, and enforcement responsibilities.
+
+  - id: A8.23.2
+    description: Are web filtering tools or solutions (e.g., Secure Web Gateways, DNS filtering) deployed to monitor and control internet access?
+    type: automated
+    help_text: Deploy tools such as Cisco Umbrella, Zscaler, FortiGuard, or DNS-level filtering to enforce policy. Ensure they are applied at both endpoint and network level.
+
+  - id: A8.23.3
+    description: Are web filtering tools integrated with threat intelligence feeds to block malicious domains and URLs in real-time?
+    type: automated
+    help_text: Use vendor-managed or third-party threat intelligence feeds to automatically block access to phishing, malware, and command-and-control domains.
+
+  - id: A8.23.4
+    description: Are role-based access controls (RBAC) implemented to apply different web filtering rules for various user groups (e.g., employees, contractors, guests)?
+    type: manual
+    help_text: Configure policy tiers in your web filtering system based on user identity or device type. Apply stricter rules to guests or high-risk environments.
+
+  - id: A8.23.5
+    description: Is HTTPS traffic inspected by web filtering tools to detect and block threats concealed in encrypted communications?
+    type: automated
+    help_text: Enable SSL/TLS inspection on outbound traffic where legal and technically feasible. Use certificate authorities and endpoint trust to avoid browser errors.
+
+  - id: A8.23.6
+    description: Are HTTPS inspection policies configured to avoid privacy violations (e.g., selective inspection)?
+    type: manual
+    help_text: Exclude personal or sensitive categories (e.g., banking, health) from decryption unless justified. Clearly document exceptions in the policy and inform users.
+
+  - id: A8.23.7
+    description: Are all web access activities logged, including blocked and allowed requests?
+    type: automated
+    help_text: Log all HTTP/S access attempts and filter actions. Store logs in a centralized logging or SIEM platform and retain for audit or forensic analysis.
+
+  - id: A8.23.8
+    description: Are users educated on acceptable internet usage and the purpose of web filtering?
+    type: manual
+    help_text: Include acceptable use topics and web filtering rationale in employee onboarding and periodic training. Offer FAQs or support materials for clarity.
+
+  - id: A8.23.9
+    description: Are incidents involving attempts to access blocked or malicious websites logged and investigated?
+    type: manual
+    help_text: Triage alerts and logs related to blocked traffic. Investigate repeated attempts or alerts linked to malware indicators and document findings.
+
+  - id: A8.23.10
+    description: Are alerts generated for repeated or suspicious attempts to bypass web filtering?
+    type: automated
+    help_text: Configure rules to detect tunneling, VPN/proxy usage, or repeated access to blocked domains. Trigger alerts and link to the incident response process if necessary.

@@ -1,0 +1,52 @@
+control_id: A.8.11
+title: Data Masking
+checklist_items:
+  - id: A8.11.1
+    description: Is there a documented policy defining when and how data masking should be applied (e.g. which data classifications require masking such as personal, confidential, or sensitive data)?
+    type: manual
+    help_text: The policy should identify data categories that require masking and define use cases (e.g., masking for testing, user training). Include distinctions between irreversible masking and reversible pseudonymization.
+
+  - id: A8.11.2
+    description: Is there an inventory of systems and datasets requiring masking?
+    type: manual
+    help_text: Maintain a data inventory or data flow map that identifies systems processing personal or sensitive data. Flag those requiring masking based on classification and use.
+
+  - id: A8.11.3
+    description: Are appropriate data masking techniques (e.g., tokenization, encryption, pseudonymization) applied based on data type and use case?
+    type: manual
+    help_text: Apply deterministic or random masking, shuffling, nulling, or tokenization depending on whether data needs to remain linkable or statistically useful. Use reversible methods only when necessary and tightly controlled.
+
+  - id: A8.11.4
+    description: Are reversible and irreversible masking techniques differentiated and applied accordingly?
+    type: manual
+    help_text: Use irreversible masking (e.g., randomization) for dev/test environments. Use reversible methods only in production with strict access controls and key management.
+
+  - id: A8.11.5
+    description: Are automated tools used to implement data masking?
+    type: automated
+    help_text: Use tools such as IBM Optim, Oracle Data Masking, or open-source tools integrated into CI/CD pipelines. Automate masking for data exports and sandbox generation.
+
+  - id: A8.11.6
+    description: Is access to unmasked data restricted to authorized personnel only?
+    type: manual
+    help_text: Enforce RBAC and data access governance. Use data access logs and periodic reviews to ensure only authorized roles (e.g., compliance, security) can view or revert masked data.
+
+  - id: A8.11.7
+    description: Is data masking enforced for test, development, and staging environments?
+    type: automated
+    help_text: Use masked datasets when populating non-production environments. Prevent accidental loading of real data into lower-tier environments through DLP or automated deployment rules.
+
+  - id: A8.11.8
+    description: Are masking activities logged, including details of when and where masking was applied?
+    type: automated
+    help_text: Log all masking operations and store logs securely. Include dataset, timestamp, masking method, tool used, and responsible user/service. Retain logs for audit and troubleshooting.
+
+  - id: A8.11.9
+    description: Are masking practices aligned with regulatory requirements (e.g., GDPR, HIPAA)?
+    type: manual
+    help_text: Confirm alignment with Article 32 and 25 of GDPR (data minimization, pseudonymization) and/or relevant sectoral laws. Document the legal basis for masking and when unmasking is permissible.
+
+  - id: A8.11.10
+    description: Are employees and contractors trained on the importance of data masking and their role in implementing it?
+    type: manual
+    help_text: Provide role-based training for developers, analysts, and engineers on masking vs. encryption, masking techniques, and when masking is legally required. Include this in data handling or privacy training modules.

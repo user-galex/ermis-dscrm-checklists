@@ -1,0 +1,57 @@
+control_id: A.8.7
+title: Protection Against Malware
+checklist_items:
+  - id: A8.7.1
+    description: Is anti-malware software installed and actively running on all endpoint devices, servers, and network systems?
+    type: automated
+    help_text: Deploy anti-malware or endpoint detection and response (EDR) software (e.g., Microsoft Defender, CrowdStrike, Sophos) across all devices. Confirm active protection status via centralized management console.
+
+  - id: A8.7.2
+    description: Are anti-malware definitions and engines updated automatically and regularly across all devices?
+    type: automated
+    help_text: Configure endpoint security to update virus definitions daily or more frequently. Monitor update compliance via EDR dashboard or group policy results.
+
+  - id: A8.7.3
+    description: Are employees educated on identifying and avoiding malware risks (e.g., phishing emails, suspicious downloads)?
+    type: manual
+    help_text: Include malware awareness in onboarding and annual security training. Provide examples of phishing, drive-by downloads, and infected file attachments. Track training participation.
+
+  - id: A8.7.4
+    description: Are users restricted from installing unauthorized or unverified software that could introduce malware?
+    type: automated
+    help_text: Use application whitelisting, endpoint control tools, or OS policies to prevent installation of unauthorized apps. Alert on attempts to install unapproved software.
+
+  - id: A8.7.5
+    description: Are email systems configured with spam filters and anti-malware scanning for attachments?
+    type: automated
+    help_text: Enable attachment scanning and threat intelligence services in email security gateways (e.g., Microsoft 365 Defender, Proofpoint, Mimecast). Block executables and dangerous file types.
+
+  - id: A8.7.6
+    description: Are links in emails automatically scanned for malicious content before delivery to users?
+    type: automated
+    help_text: Enable URL rewriting and time-of-click scanning in your email security platform. Monitor blocked or redirected links in threat reporting.
+
+  - id: A8.7.7
+    description: Are web traffic and downloads monitored and scanned for malware?
+    type: automated
+    help_text: Implement network-based malware scanning via secure web gateways, proxy servers, or NGFWs. Monitor high-risk domains and downloaded file types.
+
+  - id: A8.7.8
+    description: Is a secure web gateway or content filtering solution implemented to block access to malicious websites?
+    type: automated
+    help_text: Use DNS filtering or secure web gateways (e.g., Cisco Umbrella, Zscaler) to block malicious, phishing, and suspicious categories. Log and audit access attempts.
+
+  - id: A8.7.9
+    description: Are removable media (e.g., USB drives) scanned automatically for malware when connected to devices?
+    type: automated
+    help_text: Configure anti-malware software to scan USB drives upon insertion. Restrict auto-run functionality and consider using endpoint policies to block unauthorized media.
+
+  - id: A8.7.10
+    description: Are there documented procedures for responding to malware incidents, including isolation, containment, and recovery?
+    type: manual
+    help_text: Maintain incident response runbooks specific to malware. Include steps for endpoint isolation, forensic capture, containment, remediation, and communication. Review annually.
+
+  - id: A8.7.11
+    description: Are malware incidents logged, analyzed, and reviewed to improve defenses?
+    type: manual
+    help_text: Analyze malware detections in your SIEM or EDR platform. Perform root cause analysis for major incidents and identify gaps in email/web filtering or endpoint defenses. Include malware trends in quarterly security reviews.

@@ -1,0 +1,67 @@
+control_id: A.8.27
+title: Secure System Architecture and Engineering Principles
+checklist_items:
+  - id: A8.27.1
+    description: Is there a documented policy for secure system architecture and engineering principles, addressing security-by-design and privacy-by-design practices?
+    type: manual
+    help_text: Define architectural guidelines based on principles such as confidentiality, integrity, availability, least privilege, separation of duties, and privacy-by-design. Include references to ISO 27034, NIST SP 800-160, or ENISA guidelines.
+
+  - id: A8.27.2
+    description: Are threat modeling exercises conducted during the design phase of system architecture?
+    type: manual
+    help_text: Use threat modeling tools or frameworks (e.g., STRIDE, DFDs, attack trees) during system design. Document potential threats and architectural weaknesses.
+
+  - id: A8.27.3
+    description: Are identified threats documented along with corresponding mitigation strategies?
+    type: manual
+    help_text: Maintain a threat register linked to design artifacts and update it with mitigation actions (e.g., encryption, segmentation, rate limiting) and residual risks.
+
+  - id: A8.27.4
+    description: Are secure design principles, such as least privilege, defense-in-depth, and fail-safe defaults, applied to all systems?
+    type: manual
+    help_text: Apply secure architecture patterns (e.g., microsegmentation, zero trust) and ensure enforcement through network zoning, IAM, input validation, and exception handling.
+
+  - id: A8.27.5
+    description: Are secure defaults implemented for configurations, permissions, and operations?
+    type: manual
+    help_text: Ensure that new deployments come preconfigured with hardened settings (e.g., firewalls enabled, admin interfaces disabled, logging enabled). Validate against CIS Benchmarks or internal baselines.
+
+  - id: A8.27.6
+    description: Are roles and responsibilities segregated within the system architecture to minimize insider threats?
+    type: manual
+    help_text: Use RBAC or ABAC to separate admin, developer, operator, and audit functions. Avoid shared accounts and enforce segregation of duties (SoD) in production systems.
+
+  - id: A8.27.7
+    description: Are redundancy and failover mechanisms included in the design to ensure high availability and resilience?
+    type: manual
+    help_text: Architect systems to eliminate single points of failure using load balancers, HA clusters, geo-replication, and distributed databases. Validate HA through disaster recovery tests.
+
+  - id: A8.27.8
+    description: Are critical components protected against single points of failure?
+    type: manual
+    help_text: Audit system diagrams for infrastructure, service, and data layer redundancies. Design fallback logic or degraded mode support for critical workflows.
+
+  - id: A8.27.9
+    description: Are third-party components, APIs, and services assessed for security before integration?
+    type: manual
+    help_text: Conduct security reviews or due diligence for any vendor SDK, API, or SaaS service. Assess SLA, data handling, authentication models, and compliance certifications.
+
+  - id: A8.27.10
+    description: Are third-party dependencies reviewed and updated regularly to address vulnerabilities?
+    type: automated
+    help_text: Automate SCA (Software Composition Analysis) to scan for vulnerable packages in containers, frameworks, or libraries. Use tools like Snyk, Dependabot, or Grype in CI/CD.
+
+  - id: A8.27.11
+    description: Are baseline secure configurations defined for all system components (e.g., operating systems, middleware, and databases)?
+    type: manual
+    help_text: Maintain configuration baselines aligned with hardening guides (e.g., CIS Benchmarks). Store and version control these for OS images, middleware, and DBMSs.
+
+  - id: A8.27.12
+    description: Is the architecture designed to enable effective monitoring and logging of security-relevant events, ideally in a centralized manner?
+    type: manual
+    help_text: Design logging into each system component from the start. Route logs to a SIEM or log aggregator. Ensure the architecture supports log correlation and alerting.
+
+  - id: A8.27.13
+    description: Are independent assessments, such as security audits or penetration tests, conducted to validate the architecture's security?
+    type: manual
+    help_text: Schedule third-party reviews of your system architecture during or after design. Include review of trust boundaries, privilege escalation risks, and high-value asset protection.

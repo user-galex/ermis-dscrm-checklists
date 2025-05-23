@@ -1,0 +1,57 @@
+control_id: A.8.31
+title: Separation of Development, Test and Production Environments
+checklist_items:
+  - id: A8.31.1
+    description: Is there a documented policy defining the separation of development, test, and production environments, including roles, responsibilities, and controls to enforce separation?
+    type: manual
+    help_text: The policy should formalize environment boundaries, deployment workflows, access levels, and change management expectations. It should clearly define what types of operations are allowed in each environment.
+
+  - id: A8.31.2
+    description: Are development, test, and production environments physically or logically segregated (e.g., separate networks, servers, or containers), with controls in place to prevent unauthorized access between environments?
+    type: manual
+    help_text: Use VLANs, firewall rules, cloud project/account segmentation, or container-level isolation to enforce separation. Prevent lateral movement between environments.
+
+  - id: A8.31.3
+    description: Is access to each environment restricted based on roles and responsibilities (e.g., developers access only development, not production)?
+    type: manual
+    help_text: Apply RBAC or IAM policies to ensure that access is limited to the minimum necessary per role. Production access should be tightly controlled and audited.
+
+  - id: A8.31.4
+    description: Is real production data prohibited from being used in development and test environments?
+    type: manual
+    help_text: Establish and enforce a policy that prohibits use of live data in lower environments unless legally or operationally justified and formally approved.
+
+  - id: A8.31.5
+    description: If production data must be used, is it anonymized or masked before being transferred?
+    type: manual
+    help_text: Use data masking or tokenization tools to ensure PII or sensitive data is not exposed in non-production environments. Keep logs of transformations applied.
+
+  - id: A8.31.6
+    description: Are configurations for each environment managed independently to ensure changes in one environment do not impact others?
+    type: manual
+    help_text: Use infrastructure-as-code (IaC) or separate configuration files/repos. Avoid shared resources or environment variables across environments.
+
+  - id: A8.31.7
+    description: Are configuration files for sensitive environments (e.g., production) secured against unauthorized modifications?
+    type: manual
+    help_text: Apply write protection, access control, and change tracking (e.g., git-based versioning) to production configs. Require reviews or digital signatures for updates.
+
+  - id: A8.31.8
+    description: Are changes to production systems reviewed and tested in the development and test environments before deployment?
+    type: manual
+    help_text: Enforce CI/CD workflows that include staging gates and require successful test runs and security checks before promotion to production.
+
+  - id: A8.31.9
+    description: Are activities within each environment monitored and logged independently?
+    type: automated
+    help_text: Collect and store environment-specific logs in isolated SIEM views or log buckets. Monitor for unauthorized actions, drift, or suspicious changes per environment.
+
+  - id: A8.31.10
+    description: Are tools, libraries, and frameworks specific to each environment kept separate to avoid cross-environment contamination?
+    type: manual
+    help_text: Maintain separate dependency trees or package managers per environment. Avoid pulling development tools into production containers or servers.
+
+  - id: A8.31.11
+    description: Are incidents occurring in one environment investigated without impacting others (e.g., isolating a compromised test environment)?
+    type: manual
+    help_text: Design incident response to isolate issues per environment. Test containment procedures regularly and ensure access controls and logging support independent analysis.

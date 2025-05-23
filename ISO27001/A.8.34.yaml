@@ -1,0 +1,62 @@
+control_id: A.8.34
+title: Protection of Information Systems During Audit Testing
+checklist_items:
+  - id: A8.34.1
+    description: Is there a documented policy governing how information systems are protected during audit testing, outlining roles, responsibilities, and procedures for conducting secure audit activities?
+    type: manual
+    help_text: The policy should define acceptable audit scopes, control access requirements, data protection measures, and post-audit responsibilities for IT, auditors, and security staff.
+
+  - id: A8.34.2
+    description: Is the scope of audit testing clearly defined and agreed upon with stakeholders before initiating the audit?
+    type: manual
+    help_text: Document audit scope including target systems, tools, data sensitivity, and timeframes. Obtain written approval from system owners and management before proceeding.
+
+  - id: A8.34.3
+    description: Are sensitive systems and data identified, and protective measures specified?
+    type: manual
+    help_text: Flag systems with sensitive configurations or data (e.g., production databases, PII). Apply additional controls such as read-only access, sandbox testing, or encryption.
+
+  - id: A8.34.4
+    description: Are access rights to information systems granted to auditors based on the principle of least privilege?
+    type: manual
+    help_text: Provide only the minimum access required for the audit (e.g., view logs or configurations). Use time-bound roles and avoid permanent or high-level privileges.
+
+  - id: A8.34.5
+    description: Are temporary access permissions reviewed and revoked immediately after the audit is completed?
+    type: manual
+    help_text: Implement a defined deprovisioning process. Remove accounts, VPN access, tokens, or temporary credentials on the audit closure date.
+
+  - id: A8.34.6
+    description: Are audits conducted in isolated or controlled environments to avoid impact on live production systems, using mock systems or replicas used where possible to minimize risks to operational environments?
+    type: manual
+    help_text: Use staging, read-only mirrors, or data replicas for tests. Avoid scans or interventions on active systems unless risk has been assessed and approved.
+
+  - id: A8.34.7
+    description: Are audit activities logged to ensure traceability and accountability?
+    type: automated
+    help_text: Enable logging for auditor logins, commands, and file access. Store logs in tamper-evident locations and retain them for compliance evidence.
+
+  - id: A8.34.8
+    description: Are sensitive data and system configurations adequately protected during audit testing (e.g., encryption, masking)?
+    type: manual
+    help_text: Use masked datasets or pseudonymized configuration files. Ensure audit results and collected data are stored securely and handled per classification policies.
+
+  - id: A8.34.9
+    description: Are any changes made to systems during the audit approved through a formal change management process?
+    type: manual
+    help_text: For any configuration or patching performed during an audit, raise a formal change request with risk assessment and rollback plans.
+
+  - id: A8.34.10
+    description: Are audit tests designed to minimize impact on system availability, performance, and integrity?
+    type: manual
+    help_text: Run tests off-peak where possible. Avoid full scans or stress tests unless explicitly permitted. Use throttling and traffic shaping when interacting with live systems.
+
+  - id: A8.34.11
+    description: Is there a process in place to handle security incidents or disruptions caused by audit activities?
+    type: manual
+    help_text: Extend your incident response plan to include audit-related disruptions. Establish points of contact for immediate containment, rollback, and communication.
+
+  - id: A8.34.12
+    description: Are audit activities reviewed after completion to ensure compliance with agreed-upon procedures?
+    type: manual
+    help_text: Conduct a post-audit review with auditors and IT staff. Verify that access was revoked, no unapproved changes occurred, and data handling complied with policy.

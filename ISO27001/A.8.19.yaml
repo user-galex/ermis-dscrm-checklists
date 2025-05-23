@@ -1,0 +1,62 @@
+control_id: A.8.19
+title: Installation of Software on Operational Systems
+checklist_items:
+  - id: A8.19.1
+    description: Is there a documented policy governing the installation of software on operational systems, defining the roles, responsibilities, and approval processes for software installation?
+    type: manual
+    help_text: The policy should define who can install software, what constitutes operational environments, approval and testing requirements, and alignment with change management processes.
+
+  - id: A8.19.2
+    description: Is there an up-to-date inventory of authorized software allowed for installation on operational systems, explicitly prohibiting unauthorized software?
+    type: manual
+    help_text: Maintain a centrally managed whitelist of approved software. Use endpoint protection or MDM/EDR tools to enforce and monitor deviations.
+
+  - id: A8.19.3
+    description: Is there a formal approval process for requesting and authorizing software installations?
+    type: manual
+    help_text: Implement a workflow (e.g., ticket-based) requiring review and approval by IT/security for all new software requests. Include justification and risk assessment.
+
+  - id: A8.19.4
+    description: Are approvals documented and stored for audit purposes?
+    type: manual
+    help_text: Retain records of who requested, approved, and executed each software installation. Store these in a change management or ticketing system.
+
+  - id: A8.19.5
+    description: Is access to install software restricted to authorized personnel (e.g., system administrators)?
+    type: manual
+    help_text: Limit install rights to admin accounts or defined roles. Disable local install rights for standard users on servers and production endpoints.
+
+  - id: A8.19.6
+    description: Is all new software tested in a non-production environment before deployment to operational systems?
+    type: manual
+    help_text: Require sandbox or staging environment testing for new or updated software. Include functionality, performance, and security testing as part of the approval workflow.
+
+  - id: A8.19.7
+    description: Are software sources verified to ensure they are legitimate and free from malware or vulnerabilities?
+    type: manual
+    help_text: Only allow downloads from verified vendor sites or internal repositories. Block public download portals unless explicitly allowed and scanned.
+
+  - id: A8.19.8
+    description: Are digital signatures or checksums used to validate software integrity?
+    type: automated
+    help_text: Require SHA-256 or stronger hashes to verify binaries. When possible, enforce signature verification using package managers, OS tools, or third-party scanners.
+
+  - id: A8.19.9
+    description: Are software installations tracked and approved through the organization’s change management process?
+    type: manual
+    help_text: Treat software installations as changes requiring documentation, testing, and authorization. Record in the organization's change log or change management platform.
+
+  - id: A8.19.10
+    description: Are all software installation activities logged, including details of what was installed, by whom, and when?
+    type: automated
+    help_text: Use system event logs, EDR tools, or installation monitoring scripts to capture and store installation metadata. Correlate with access logs and change records.
+
+  - id: A8.19.11
+    description: Are installed software applications included in the organization’s patch management process?
+    type: manual
+    help_text: Ensure all production software is tracked for updates and security patches. Integrate with the patching system (e.g., SCCM, WSUS, cloud-native patch tools).
+
+  - id: A8.19.12
+    description: Is the list of installed software on operational systems periodically reviewed to ensure compliance with the authorized software inventory?
+    type: manual
+    help_text: Perform quarterly or semi-annual audits of installed software across systems. Compare against the authorized inventory and investigate discrepancies.

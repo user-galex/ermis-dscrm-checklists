@@ -1,0 +1,57 @@
+control_id: A.8.33
+title: Test Information
+checklist_items:
+  - id: A8.33.1
+    description: Is there a documented policy outlining the handling, storage, and use of information in testing environments, addressing the protection of sensitive or production data during testing?
+    type: manual
+    help_text: The policy should define when production data may be used, the requirement for anonymization or masking, access control expectations, and secure disposal procedures for test data.
+
+  - id: A8.33.2
+    description: Are test data classified according to sensitivity and criticality?
+    type: manual
+    help_text: Apply data classification schemes to test datasets based on their source and content (e.g., PII, financial, operational). Use labels to enforce access and handling rules.
+
+  - id: A8.33.3
+    description: Is production data used for testing anonymized or masked to prevent exposure of sensitive information?
+    type: manual
+    help_text: Require irreversible anonymization or tokenization for sensitive fields in test data. Prohibit real identities, credentials, or account numbers in test environments.
+
+  - id: A8.33.4
+    description: Is access to test environments and data restricted to authorized personnel only?
+    type: manual
+    help_text: Enforce RBAC and separate authentication for test environments. Grant access only to developers, QA personnel, or DevOps engineers with documented need.
+
+  - id: A8.33.5
+    description: Are test environments segregated from production environments to avoid unintended impacts?
+    type: manual
+    help_text: Ensure logical or physical separation between test and production environments. Prevent data leakage, accidental writes to production, or unauthorized access.
+
+  - id: A8.33.6
+    description: Are appropriate data protection measures (e.g., encryption, secure storage) implemented for test data?
+    type: automated
+    help_text: Apply the same encryption and storage policies to test data as production data. Use full-disk encryption, encrypted databases, or vault services for sensitive information.
+
+  - id: A8.33.7
+    description: Is synthetic or dummy data used instead of production data wherever possible?
+    type: manual
+    help_text: Encourage use of test data generators or synthetic datasets that reflect production structure without containing real or sensitive data.
+
+  - id: A8.33.8
+    description: Are activities in test environments logged, including data access and modifications?
+    type: automated
+    help_text: Enable audit logging for test environment access, API calls, database reads/writes, and admin actions. Store logs in a centralized location for review and retention.
+
+  - id: A8.33.9
+    description: Are incidents involving test data (e.g., data breaches, unauthorized access) documented and addressed promptly?
+    type: manual
+    help_text: Include test environments in the incident response plan. Treat breaches of masked or synthetic data as serious and investigate for process lapses or control failures.
+
+  - id: A8.33.10
+    description: Is there a retention policy for test data, specifying how long it can be kept and when it should be deleted?
+    type: manual
+    help_text: Define retention periods based on the purpose of the test. Automate purging or secure deletion of outdated test datasets, especially when based on sensitive production snapshots.
+
+  - id: A8.33.11
+    description: Are developers, testers, and other relevant personnel trained on secure handling of test data?
+    type: manual
+    help_text: Provide training during onboarding and annually on topics like anonymization, secure deletion, legal obligations (e.g., GDPR), and proper use of test data tools.

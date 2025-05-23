@@ -1,0 +1,57 @@
+control_id: A.8.10
+title: Information Deletion
+checklist_items:
+  - id: A8.10.1
+    description: Is there a documented policy defining the processes, tools, and responsibilities for securely deleting information, e.g. covering all stages of information deletion, including regular and ad-hoc deletion?
+    type: manual
+    help_text: Ensure an approved policy exists that defines roles, tools, and workflows for scheduled, ad-hoc, and end-of-life deletion. Cover both user data and system-level data (e.g., backups, logs).
+
+  - id: A8.10.2
+    description: Are data classification guidelines in place to determine which data require secure deletion based on sensitivity and regulatory requirements?
+    type: manual
+    help_text: Define sensitivity levels (e.g., public, internal, confidential, sensitive personal data) and align them with retention and deletion rules. Refer to GDPR, HIPAA, or NIS2 where applicable.
+
+  - id: A8.10.3
+    description: Are approved and secure deletion methods (e.g., data wiping, degaussing, physical destruction) implemented based on the storage medium (e.g., hard drives, SSDs, cloud)?
+    type: manual
+    help_text: Use appropriate methods for each medium: secure erase for SSDs, multi-pass wipe for HDDs, cryptographic erasure for cloud storage, and shredding or degaussing for physical drives.
+
+  - id: A8.10.4
+    description: Are automated tools used to securely delete information on a scheduled basis or upon request?
+    type: automated
+    help_text: Implement secure deletion scripts or tools (e.g., BleachBit, sDelete, shred, or built-in cloud tools). Schedule periodic deletions of logs, temp files, and expired records. Log the results.
+
+  - id: A8.10.5
+    description: Are employees trained and aware of their roles in securely deleting information?
+    type: manual
+    help_text: Train employees on which data requires secure deletion, how to initiate deletion requests, and which tools or workflows to use. Include this in onboarding and annual awareness training.
+
+  - id: A8.10.6
+    description: Are unauthorized personnel restricted from performing deletion tasks?
+    type: manual
+    help_text: Use role-based access controls (RBAC) to ensure only authorized admins or data owners can trigger deletions. Monitor and audit deletion privilege assignments.
+
+  - id: A8.10.7
+    description: Are third-party service providers responsible for data destruction (e.g., recycling vendors) vetted for compliance with secure deletion practices?
+    type: manual
+    help_text: Evaluate vendors for compliance with ISO 27001, R2, or equivalent standards. Include deletion protocols in contracts or data processing agreements. Perform periodic audits where feasible.
+
+  - id: A8.10.8
+    description: Are certificates of destruction obtained and reviewed for third-party deletions?
+    type: manual
+    help_text: Require signed certificates specifying date, method, and serial numbers of destroyed assets. Retain these certificates in internal documentation and review during audits.
+
+  - id: A8.10.9
+    description: Are logs maintained for all data deletion activities, including what was deleted, when, by whom, and how?
+    type: automated
+    help_text: Log deletion events through file-level or tool-level logging. Include timestamp, user, deletion method, and system affected. Store logs securely and retain for auditing.
+
+  - id: A8.10.10
+    description: Are procedures in place for securely wiping or destroying data from end-of-life devices before disposal or repurposing?
+    type: manual
+    help_text: Require disk wiping or destruction before device reuse, recycling, or disposal. Maintain a checklist or workflow to enforce and verify each step.
+
+  - id: A8.10.11
+    description: Are deletion tools and processes periodically tested to confirm that data is irrecoverable?
+    type: manual
+    help_text: Test deletion effectiveness using forensic tools or data recovery software. Document results and adjust tools or methods if recoverable data is detected. Perform annually or after major changes.

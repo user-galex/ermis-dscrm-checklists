@@ -1,0 +1,57 @@
+control_id: A.8.8
+title: Management of Technical Vulnerabilities
+checklist_items:
+  - id: A8.8.1
+    description: Is there a documented policy outlining the identification, assessment, and remediation of technical vulnerabilities, e.g. specify timelines for addressing vulnerabilities based on their severity?
+    type: manual
+    help_text: The policy should define severity tiers (e.g., critical, high, medium, low), required remediation timelines (e.g., critical = 48h), roles, and tools used. Reference CVSS or vendor advisories to classify severity.
+
+  - id: A8.8.2
+    description: Are vulnerability scans performed regularly on all systems, applications, and networks?
+    type: automated
+    help_text: Schedule scans at least monthly for internal infrastructure and weekly or continuously for internet-facing systems. Cover endpoints, servers, containers, and web applications.
+
+  - id: A8.8.3
+    description: Are automated vulnerability management tools in use (e.g., Nessus, Qualys, OpenVAS)?
+    type: automated
+    help_text: Use commercial or open-source scanners integrated into CI/CD pipelines and infrastructure. Centralize findings in a vulnerability management dashboard or ticketing system.
+
+  - id: A8.8.4
+    description: Are the tools configured to detect vulnerabilities based on up-to-date threat intelligence?
+    type: automated
+    help_text: Confirm the scanner engine and plugin feeds are updated automatically from vendor or community sources. Enable zero-day vulnerability tracking if available.
+
+  - id: A8.8.5
+    description: Is there a formal patch management process for applying security patches to operating systems, applications, and firmware?
+    type: manual
+    help_text: Document patching procedures including responsible roles, patch approval workflow, testing, deployment frequency, and rollback procedures. Include firmware/BIOS and third-party software.
+
+  - id: A8.8.6
+    description: Are critical patches deployed within the timeframe specified in the vulnerability management policy?
+    type: automated
+    help_text: Track patch deployment metrics against SLA (e.g., 48h for critical, 7 days for high). Use patch compliance dashboards or tools (e.g., WSUS, Intune, Ansible, SCCM).
+
+  - id: A8.8.7
+    description: Does the organization subscribe to threat intelligence feeds or monitor security advisories to identify emerging vulnerabilities?
+    type: manual
+    help_text: Subscribe to sources such as US-CERT, CVE/NVD, vendor bulletins, or commercial threat intelligence platforms. Integrate alerts into email, Slack, or ticketing systems.
+
+  - id: A8.8.8
+    description: Are identified vulnerabilities assessed for their potential impact and likelihood of exploitation?
+    type: manual
+    help_text: Use CVSS scoring, asset criticality, exploit availability, and business impact to evaluate risk. Triage vulnerabilities accordingly in your risk register or tracking system.
+
+  - id: A8.8.9
+    description: Are mitigation actions prioritized based on the results of the risk assessment?
+    type: manual
+    help_text: Prioritize based on exploitability and potential damage. Document compensating controls for deferred remediation (e.g., firewall rules, isolation, monitoring).
+
+  - id: A8.8.10
+    description: Are remediation actions, such as applying patches or implementing compensating controls, documented and tracked to completion?
+    type: manual
+    help_text: Use a vulnerability tracker or issue management system to log remediation tasks. Include assigned owner, due date, remediation method, and resolution date.
+
+  - id: A8.8.11
+    description: Are vulnerability scan results, risk assessments, and remediation actions documented, retained and presented to management?
+    type: manual
+    help_text: Generate monthly or quarterly reports for management summarizing scan results, outstanding vulnerabilities, resolved items, and trends. Use dashboards or summary PDFs tailored to non-technical audiences.

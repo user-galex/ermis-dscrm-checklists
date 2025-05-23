@@ -1,0 +1,52 @@
+control_id: A.8.22
+title: Segregation of Networks
+checklist_items:
+  - id: A8.22.1
+    description: Is there a documented policy outlining the principles and requirements for network segregation?
+    type: manual
+    help_text: The policy should define segregation objectives (e.g., production vs. dev, internal vs. external), minimum controls (e.g., firewall enforcement), and roles responsible for maintaining segregation.
+
+  - id: A8.22.2
+    description: Are critical systems, sensitive data, and business-critical applications identified and prioritized for segregation?
+    type: manual
+    help_text: Perform a network asset inventory and business impact assessment to identify assets requiring isolation. Label and track systems needing enhanced segregation or zoning.
+
+  - id: A8.22.3
+    description: Are physical or virtual mechanisms (e.g., VLANs, firewalls) used to enforce segregation between different network zones?
+    type: manual
+    help_text: Use VLANs, subnetting, VRFs, or SDN to implement segmentation. Combine with firewall rules to enforce control at network boundaries.
+
+  - id: A8.22.4
+    description: Are strict access controls enforced to prevent unauthorized access between segregated networks?
+    type: manual
+    help_text: Enforce ACLs, RBAC, and firewall rules to isolate zones. Restrict lateral movement between environments like production, test, guest, and vendor networks.
+
+  - id: A8.22.5
+    description: Are rules for access between zones based on the principle of least privilege?
+    type: manual
+    help_text: Limit inter-zone traffic to the minimum required ports, protocols, and source/destination pairs. Review firewall and routing rules for over-permissiveness.
+
+  - id: A8.22.6
+    description: Are firewalls configured to monitor and control traffic between network zones?
+    type: automated
+    help_text: Use stateful firewalls or NGFWs to control and inspect inter-zone traffic. Log accepted and denied connections for later review.
+
+  - id: A8.22.7
+    description: Is remote access to segregated networks secured using VPNs, Zero Trust Network Access (ZTNA), or other secure methods?
+    type: automated
+    help_text: Require VPNs with MFA or ZTNA platforms for accessing isolated networks. Avoid exposing segregated segments directly to the internet or shared platforms.
+
+  - id: A8.22.8
+    description: Are traffic flows between network zones logged and monitored for suspicious activity?
+    type: automated
+    help_text: Enable traffic flow logging (e.g., NetFlow, VPC flow logs). Use SIEM or NDR tools to detect anomalies and unauthorized lateral movement attempts.
+
+  - id: A8.22.9
+    description: Are network segregation measures tested periodically to ensure effectiveness (e.g., penetration testing, vulnerability assessments)?
+    type: manual
+    help_text: Include segmentation validation in security testing (e.g., red teaming, port scanning from isolated zones). Remediate misconfigurations and document findings.
+
+  - id: A8.22.10
+    description: Are third-party connections to segregated networks restricted and monitored?
+    type: manual
+    help_text: Limit vendor and partner access to dedicated zones. Enforce endpoint posture checks, session logging, and time-limited access. Monitor and audit all activity.

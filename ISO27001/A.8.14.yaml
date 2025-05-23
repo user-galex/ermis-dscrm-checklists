@@ -1,0 +1,62 @@
+control_id: A.8.14
+title: Redundancy of Information Processing Facilities
+checklist_items:
+  - id: A8.14.1
+    description: Is there a documented policy outlining the need for redundancy in critical information processing facilities including roles, responsibilities, and requirements for ensuring high availability?
+    type: manual
+    help_text: The policy should define availability targets, redundancy principles (e.g., N+1, active-active), responsible teams, and environments covered (e.g., data centers, cloud infrastructure).
+
+  - id: A8.14.2
+    description: Are all critical systems, applications, and data processing facilities identified and prioritized for redundancy?
+    type: manual
+    help_text: Maintain an asset register that flags critical systems requiring high availability. Use business impact analysis (BIA) to prioritize redundancy efforts.
+
+  - id: A8.14.3
+    description: Is a risk assessment performed to determine which systems require redundancy?
+    type: manual
+    help_text: Conduct periodic risk assessments to evaluate the impact of downtime per system or function. Assess RTO/RPO impact and business continuity risk.
+
+  - id: A8.14.4
+    description: Are redundant servers, storage systems, and networking components in place for critical systems?
+    type: manual
+    help_text: Implement redundancy for compute, storage, and network layers. Examples include HA clusters, mirrored disks, and redundant switches or routers.
+
+  - id: A8.14.5
+    description: Are hardware components configured to fail over automatically in the event of a failure?
+    type: automated
+    help_text: Configure automated failover for critical services (e.g., using clustering, auto-scaling groups, or virtualization platforms like VMware HA, AWS ASG). Test configurations periodically.
+
+  - id: A8.14.6
+    description: Are redundant power supplies, uninterruptible power supplies (UPS), and backup generators in place for critical systems?
+    type: manual
+    help_text: Confirm that server rooms or data centers have dual power supplies, battery backups, and diesel or natural gas generators. Review maintenance records and test logs.
+
+  - id: A8.14.7
+    description: Are cooling and environmental control systems redundant to avoid overheating or environmental failure?
+    type: manual
+    help_text: Ensure redundant HVAC systems, temperature monitoring, and environmental alerts are in place for physical infrastructure. Include these in site risk assessments.
+
+  - id: A8.14.8
+    description: Are redundant network connections and pathways implemented to ensure continuous connectivity?
+    type: manual
+    help_text: Use diverse ISPs, redundant fiber paths, and BGP routing for critical environments. Physically separate connections where possible to reduce single points of failure.
+
+  - id: A8.14.9
+    description: Is traffic load balancing configured to distribute network traffic across redundant connections?
+    type: automated
+    help_text: Deploy network load balancers (e.g., F5, NGINX, AWS ELB) or DNS-based traffic distribution. Monitor performance and failover behavior during peak loads.
+
+  - id: A8.14.10
+    description: Are redundancy mechanisms regularly tested to confirm that they work as intended (e.g., failover tests, load tests)?
+    type: manual
+    help_text: Schedule quarterly or biannual failover and load tests for key infrastructure. Document test scenarios, results, and post-test remediation.
+
+  - id: A8.14.11
+    description: Are there documented procedures for responding to failures of redundant systems?
+    type: manual
+    help_text: Maintain operational runbooks for redundant system failures, including failback instructions, escalation procedures, and interim mitigation steps.
+
+  - id: A8.14.12
+    description: Are recovery time objectives (RTOs) and recovery point objectives (RPOs) met during failover tests?
+    type: manual
+    help_text: Capture RTO and RPO metrics during DR or failover simulations. Compare results against defined targets and report any deviations for resolution planning.

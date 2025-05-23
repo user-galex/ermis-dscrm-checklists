@@ -1,0 +1,57 @@
+control_id: A.8.24
+title: Use of Cryptography
+checklist_items:
+  - id: A8.24.1
+    description: Is there a documented cryptography policy defining the use of cryptographic controls for data protection?
+    type: manual
+    help_text: Define when and how cryptographic techniques must be used (e.g., for data in transit, at rest, or backups). The policy should include algorithm standards, key lifecycle rules, and compliance references.
+
+  - id: A8.24.2
+    description: Are sensitive data assets identified and classified to determine which require cryptographic protection?
+    type: manual
+    help_text: Perform a data classification exercise to identify which datasets (e.g., PII, financial records, credentials) require encryption or hashing, based on risk or legal requirements.
+
+  - id: A8.24.3
+    description: Are only approved and secure cryptographic algorithms (e.g., AES, RSA, SHA-256) used?
+    type: automated
+    help_text: Validate that only vetted algorithms are used in applications and configurations. Prohibit deprecated or weak algorithms (e.g., MD5, DES, RC4) in development and system settings.
+
+  - id: A8.24.4
+    description: Are cryptographic keys managed securely, including generation, storage, rotation, and disposal?
+    type: manual
+    help_text: Follow key lifecycle best practices (e.g., NIST SP 800-57). Document procedures for secure key generation, access control, rotation intervals, archival, and secure destruction.
+
+  - id: A8.24.5
+    description: Is a Key Management System (KMS) implemented to automate and centralize key management?
+    type: automated
+    help_text: Use an enterprise KMS (e.g., AWS KMS, Azure Key Vault, HashiCorp Vault) to manage encryption keys, enforce policies, and enable auditability of key operations.
+
+  - id: A8.24.6
+    description: Is encryption enforced for data transmitted over networks, using secure protocols (e.g., TLS, IPSec)?
+    type: automated
+    help_text: Enforce HTTPS, TLS 1.2+ or IPSec VPNs for all data transfers across public or untrusted networks. Disable insecure protocols like FTP, HTTP, and SSLv2/v3.
+
+  - id: A8.24.7
+    description: Is encryption applied to data stored on devices, servers, and removable media?
+    type: automated
+    help_text: Use full-disk encryption (e.g., BitLocker, FileVault), database encryption (e.g., TDE), and file-level encryption for sensitive records. Encrypt removable media by default.
+
+  - id: A8.24.8
+    description: Is access to cryptographic tools and keys restricted to authorized personnel only?
+    type: manual
+    help_text: Use RBAC or IAM policies to restrict access to cryptographic utilities and key stores. Monitor access logs and review privileges regularly.
+
+  - id: A8.24.9
+    description: Are cryptographic operations, such as key access and usage, logged and monitored?
+    type: automated
+    help_text: Enable auditing for all key usage events (e.g., decryption requests, sign operations). Integrate logs into SIEM platforms and monitor for anomalies or misuse.
+
+  - id: A8.24.10
+    description: Are cryptographic controls and configurations reviewed periodically to ensure effectiveness?
+    type: manual
+    help_text: Conduct periodic reviews of cryptographic implementations, library versions, algorithm choices, and configuration parameters. Update controls to match evolving threats and standards.
+
+  - id: A8.24.11
+    description: Are cryptographic controls aligned with relevant regulations and industry standards (e.g., GDPR, HIPAA, PCI DSS)?
+    type: manual
+    help_text: Map encryption practices to applicable legal and regulatory frameworks. Ensure evidence (e.g., logs, policies, diagrams) is available for audits or compliance reviews.

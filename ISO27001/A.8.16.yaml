@@ -1,0 +1,62 @@
+control_id: A.8.16
+title: Monitoring Activities
+checklist_items:
+  - id: A8.16.1
+    description: Is there a documented monitoring policy defining the scope, objectives, and responsibilities for monitoring activities?
+    type: manual
+    help_text: The policy should specify what is monitored (e.g., systems, users, traffic), monitoring frequency, responsible roles (e.g., IT, SOC), and alignment with risk management objectives.
+
+  - id: A8.16.2
+    description: Are all critical systems, networks, applications, and endpoints included in the monitoring scope?
+    type: manual
+    help_text: Maintain a list of critical assets and confirm their coverage in monitoring dashboards. Include on-prem, cloud, remote access, and mobile endpoints where relevant.
+
+  - id: A8.16.3
+    description: Are key activities, such as access attempts, configuration changes, and suspicious behavior, actively monitored?
+    type: automated
+    help_text: Monitor key events such as failed logins, privilege escalation, configuration file edits, and suspicious process launches. Validate coverage across platforms.
+
+  - id: A8.16.4
+    description: Are appropriate monitoring tools (e.g., SIEM, IDS/IPS, endpoint detection tools) deployed for real-time and historical analysis?
+    type: automated
+    help_text: Use tools like Splunk, ELK Stack, Sentinel, Suricata, Snort, or CrowdStrike. Ensure logs and events are collected from all infrastructure layers and retained for trend analysis.
+
+  - id: A8.16.5
+    description: Are tools configured to generate alerts for predefined thresholds or suspicious events?
+    type: automated
+    help_text: Define alert rules for high-failure authentication attempts, excessive traffic, known malware indicators, or system performance anomalies. Validate alerting logic regularly.
+
+  - id: A8.16.6
+    description: Are alerts prioritized based on severity and responded to within defined timelines?
+    type: manual
+    help_text: Implement an alert severity model (e.g., informational, warning, critical) and link each severity to required response times and escalation paths in the incident response plan.
+
+  - id: A8.16.7
+    description: Are logs and events from different sources correlated to identify patterns or anomalies?
+    type: automated
+    help_text: Use SIEM correlation rules to detect coordinated attacks or multistep anomalies. Cross-reference logs from firewalls, endpoints, IAM, and cloud platforms.
+
+  - id: A8.16.8
+    description: Are monitoring activities centralized in a dedicated monitoring platform or Security Operations Center (SOC)?
+    type: manual
+    help_text: Use a centralized interface (e.g., SOC, NOC, or managed detection service) to unify visibility and streamline triage, escalation, and threat hunting activities.
+
+  - id: A8.16.9
+    description: Are key system and network performance metrics monitored to ensure operational health (e.g., CPU, memory, disk usage)?
+    type: automated
+    help_text: Use performance monitoring tools (e.g., Prometheus, Zabbix, CloudWatch) to track system load, latency, resource consumption, and network uptime. Set thresholds for alerts and logging.
+
+  - id: A8.16.10
+    description: Are monitoring activities aligned with regulatory requirements and standards (e.g., GDPR, ISO 27001)?
+    type: manual
+    help_text: Confirm that monitoring complies with privacy and legal obligations. Include log anonymization or consent-based monitoring where required under GDPR or local law.
+
+  - id: A8.16.11
+    description: Are monitoring activities integrated with the incident response process to facilitate timely investigation and resolution?
+    type: manual
+    help_text: Ensure monitoring outputs feed into incident response workflows. Alert triage, investigation, and response actions should be documented and linked to incident records.
+
+  - id: A8.16.12
+    description: Are monitoring logs preserved for forensic analysis during incidents?
+    type: manual
+    help_text: Retain monitoring logs in tamper-resistant storage for at least 6–12 months. Use versioning or secure storage to ensure log integrity. Link retention to incident response and audit use cases.

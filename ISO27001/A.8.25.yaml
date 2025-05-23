@@ -1,0 +1,67 @@
+control_id: A.8.25
+title: Secure Development Life Cycle
+checklist_items:
+  - id: A8.25.1
+    description: Is there a documented policy defining the requirements for integrating security into the development life cycle, specifying roles, responsibilities, and processes for secure development?
+    type: manual
+    help_text: The policy should outline secure SDLC phases, required security controls per phase (e.g., threat modeling, secure coding, testing), and define accountability for dev, QA, and security teams.
+
+  - id: A8.25.2
+    description: Are security requirements defined during the planning phase of development projects?
+    type: manual
+    help_text: Ensure projects begin with documented functional and non-functional security requirements, including authentication, data protection, access control, and compliance targets.
+
+  - id: A8.25.3
+    description: Is threat modeling conducted during the design phase to identify potential security risks?
+    type: manual
+    help_text: Use STRIDE or similar frameworks to evaluate threat scenarios. Document architectural diagrams, data flows, and mitigation plans for high-risk components.
+
+  - id: A8.25.4
+    description: Are secure coding standards (e.g., OWASP Secure Coding Guidelines) enforced during development?
+    type: manual
+    help_text: Define language-specific secure coding checklists. Validate adherence through peer reviews, linters, or CI gate enforcement.
+
+  - id: A8.25.5
+    description: Are developers trained on secure coding practices and tools?
+    type: manual
+    help_text: Provide periodic training on injection prevention, input validation, secrets management, and secure use of dependencies. Track participation and require certification where appropriate.
+
+  - id: A8.25.6
+    description: Are only approved and up-to-date libraries, frameworks, and third-party components used in development?
+    type: automated
+    help_text: Maintain an allowlist of approved libraries. Use dependency management tools (e.g., npm audit, pip-compile, Maven Enforcer) to enforce versioning and prevent outdated packages.
+
+  - id: A8.25.7
+    description: Are dependencies regularly scanned for vulnerabilities (e.g., using tools like Snyk or Dependency-Check)?
+    type: automated
+    help_text: Integrate SCA tools into CI/CD pipelines. Monitor advisories for new vulnerabilities and prioritize remediation based on CVSS scores and exploitability.
+
+  - id: A8.25.8
+    description: Are peer reviews or automated static code analysis tools (e.g., SonarQube, Checkmarx) used to identify vulnerabilities in the code?
+    type: automated
+    help_text: Enforce peer code reviews before merges. Run static analysis tools during builds and reject pull requests with critical findings unless justified.
+
+  - id: A8.25.9
+    description: Are dynamic application security testing (DAST) and penetration testing conducted during the testing phase?
+    type: manual
+    help_text: Run authenticated DAST tools (e.g., OWASP ZAP, Burp Suite) and schedule regular penetration tests (internal or third-party) prior to major releases or after architectural changes.
+
+  - id: A8.25.10
+    description: Are test cases designed to identify security vulnerabilities, such as injection attacks or weak authentication?
+    type: manual
+    help_text: Include negative and edge-case security tests in QA coverage. Validate handling of input validation, broken access control, and brute-force protection mechanisms.
+
+  - id: A8.25.11
+    description: Are development, testing, and production environments segregated to prevent unauthorized access and data leakage?
+    type: manual
+    help_text: Use separate networks and credentials. Prevent production data from being used in non-prod environments unless anonymized or masked.
+
+  - id: A8.25.12
+    description: Are changes to code or configurations approved and documented through a formal change management process?
+    type: manual
+    help_text: Use version control, change request forms, and approval workflows. Include rollback plans and peer review as part of the deployment checklist.
+
+  - id: A8.25.13
+    description: Are applications monitored post-deployment for security vulnerabilities and anomalous behaviors?
+    type: automated
+    help_text: Enable runtime security monitoring (e.g., WAFs, RASP, cloud workload protection). Monitor logs and metrics for abuse patterns, unauthorized access, or injection attempts.
