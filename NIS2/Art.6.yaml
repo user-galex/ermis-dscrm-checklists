@@ -1,0 +1,11 @@
+control_id: Art.6
+title: Definitions
+checklist_items:
+  - id: Art.6.1
+    description: Has the organization adopted the NIS2 definitions for key terms in its internal documentation?
+    type: manual
+    help_text: Align internal terminology for "incident," "near miss," "vulnerability," and "risk" with the definitions provided in Article 6.
+  - id: Art.6.2
+    description: Are employees trained on the specific meaning of "significant incident" as defined by the Directive?
+    type: manual
+    help_text: Ensure the incident response team understands the criteria for a significant incident to trigger reporting obligations.

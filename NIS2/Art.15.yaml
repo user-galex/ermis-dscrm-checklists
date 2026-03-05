@@ -1,0 +1,7 @@
+control_id: Art.15
+title: CSIRTs network
+checklist_items:
+  - id: Art.15.1
+    description: Does the organization understand how the CSIRTs network facilitates cross-border incident response?
+    type: manual
+    help_text: Be aware of the mechanisms for international cooperation during incidents that affect multiple EU Member States.

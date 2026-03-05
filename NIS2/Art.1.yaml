@@ -1,0 +1,15 @@
+control_id: Art.1
+title: Subject matter
+checklist_items:
+  - id: Art.1.1
+    description: Does the organization understand the overall objective of the NIS2 Directive to achieve a high common level of cybersecurity?
+    type: manual
+    help_text: Review internal policy statements to ensure alignment with the Directive's goal of improving the internal market's functioning and cybersecurity resilience.
+  - id: Art.1.2
+    description: Has the organization identified its obligations regarding cybersecurity risk-management measures and reporting?
+    type: manual
+    help_text: Map the organization's current security practices against the core obligations outlined in Article 1, specifically risk management and incident reporting.
+  - id: Art.1.3
+    description: Is the organization aware of the national cybersecurity strategy and the competent authorities in its jurisdiction?
+    type: manual
+    help_text: Maintain a list of national authorities, CSIRTs, and single points of contact relevant to the organization's operations.

@@ -1,0 +1,7 @@
+control_id: Art.45
+title: Entry into force
+checklist_items:
+  - id: Art.45.1
+    description: Is the organization aware of the entry into force date of the NIS2 Directive?
+    type: manual
+    help_text: The Directive entered into force on January 16, 2023, starting the clock for transposition and compliance.

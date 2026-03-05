@@ -1,0 +1,11 @@
+control_id: Art.10
+title: Computer security incident response teams (CSIRTs)
+checklist_items:
+  - id: Art.10.1
+    description: Has the organization established a relationship with its designated national or sector-specific CSIRT?
+    type: manual
+    help_text: Register with the CSIRT and subscribe to their alerts, warnings, and vulnerability advisories.
+  - id: Art.10.2
+    description: Does the organization know how to request assistance from the CSIRT during a significant incident?
+    type: manual
+    help_text: Document the process for engaging CSIRT support, including required information and communication channels.

@@ -1,0 +1,11 @@
+control_id: Art.35
+title: Infringements entailing a personal data breach
+checklist_items:
+  - id: Art.35.1
+    description: Is there coordination between the cybersecurity team and the Data Protection Officer (DPO) during an incident?
+    type: manual
+    help_text: Ensure that incident response procedures cover both NIS2 reporting and GDPR personal data breach notification requirements.
+  - id: Art.35.2
+    description: Does the organization understand how NIS2 penalties interact with GDPR fines for the same infringement?
+    type: manual
+    help_text: Consult legal counsel to understand the "ne bis in idem" principle and how multiple regulators may coordinate their enforcement actions.

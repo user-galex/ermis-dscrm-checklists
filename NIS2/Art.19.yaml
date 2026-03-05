@@ -1,0 +1,7 @@
+control_id: Art.19
+title: Peer reviews
+checklist_items:
+  - id: Art.19.1
+    description: Does the organization consider the outcomes of national peer reviews in its compliance strategy?
+    type: manual
+    help_text: Stay informed about how national authorities are assessed by their peers to understand potential shifts in regulatory focus.

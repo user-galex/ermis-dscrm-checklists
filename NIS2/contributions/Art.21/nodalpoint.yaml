@@ -1,0 +1,9 @@
+control: Art.21
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.21.4
+    notes: "We use automated vendor risk assessment tools to monitor our critical supply chain. All new contracts now include standard NIS2-compliant security clauses and audit rights."
+  - checklist_item_id: Art.21.10
+    notes: "Multi-factor authentication is enforced across all systems, including legacy applications, using a combination of hardware tokens and phishing-resistant passkeys."

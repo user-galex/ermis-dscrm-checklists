@@ -1,0 +1,11 @@
+control_id: Art.28
+title: Database of domain name registration data
+checklist_items:
+  - id: Art.28.1
+    description: If the organization is a TLD registry or a registrar, does it maintain accurate and complete domain name registration data?
+    type: manual
+    help_text: Implement policies for the collection and maintenance of accurate WHOIS/registration data, in compliance with data protection laws.
+  - id: Art.28.2
+    description: Are there procedures for responding to lawful requests for access to registration data?
+    type: manual
+    help_text: Establish a clear process for verifying and responding to requests from competent authorities for domain registration information.

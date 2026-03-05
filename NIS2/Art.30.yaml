@@ -1,0 +1,11 @@
+control_id: Art.30
+title: Voluntary notification of relevant information
+checklist_items:
+  - id: Art.30.1
+    description: Does the organization have a policy for the voluntary notification of cyber threats or near misses?
+    type: manual
+    help_text: Encourage the reporting of information that could help authorities or other entities prevent similar incidents, even if not mandatory.
+  - id: Art.30.2
+    description: Is there a process to ensure that voluntary reporting does not lead to increased liability for the organization?
+    type: manual
+    help_text: Understand the legal protections or "safe harbor" provisions for voluntary information sharing in national laws.

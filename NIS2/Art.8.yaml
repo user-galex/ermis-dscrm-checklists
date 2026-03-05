@@ -1,0 +1,11 @@
+control_id: Art.8
+title: Competent authorities and single points of contact
+checklist_items:
+  - id: Art.8.1
+    description: Has the organization identified the specific competent authority responsible for its sector?
+    type: manual
+    help_text: Maintain contact details for the sector-specific regulator or the general cybersecurity authority.
+  - id: Art.8.2
+    description: Is there a designated liaison within the organization for communicating with the national Single Point of Contact (SPOC)?
+    type: manual
+    help_text: Assign a role (e.g., CISO or Compliance Officer) to handle cross-border communication and coordination with the SPOC.

@@ -1,0 +1,7 @@
+control_id: Art.37
+title: Mutual assistance
+checklist_items:
+  - id: Art.37.1
+    description: Does the organization understand how mutual assistance between Member States may affect cross-border supervision?
+    type: manual
+    help_text: Be aware that a competent authority in one Member State can request assistance from another for supervisory tasks involving the organization.

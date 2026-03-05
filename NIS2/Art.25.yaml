@@ -1,0 +1,11 @@
+control_id: Art.25
+title: Standardisation
+checklist_items:
+  - id: Art.25.1
+    description: Are the organization's cybersecurity measures based on international or European standards (e.g., ISO/IEC 27001)?
+    type: manual
+    help_text: Align the internal security framework with recognized standards to ensure consistency and interoperability.
+  - id: Art.25.2
+    description: Does the organization monitor updates to relevant technical specifications and standards?
+    type: manual
+    help_text: Regularly review and update technical controls to reflect changes in industry standards and best practices.

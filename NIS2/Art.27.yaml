@@ -1,0 +1,11 @@
+control_id: Art.27
+title: Registry of entities
+checklist_items:
+  - id: Art.27.1
+    description: Has the organization submitted the required information to the relevant competent authority for the national registry?
+    type: manual
+    help_text: Provide the organization's name, address, contact details, and the sectors/subsectors in which it operates.
+  - id: Art.27.2
+    description: Is the registered information kept up to date?
+    type: manual
+    help_text: Establish a process to notify authorities of any significant changes to the registered entity information within the required timeframe.

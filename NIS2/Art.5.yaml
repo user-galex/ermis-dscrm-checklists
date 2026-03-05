@@ -1,0 +1,11 @@
+control_id: Art.5
+title: Minimum harmonisation
+checklist_items:
+  - id: Art.5.1
+    description: Is the organization aware of any stricter national requirements that go beyond the NIS2 minimum harmonisation?
+    type: manual
+    help_text: Monitor national transposition laws in each Member State of operation to identify "gold-plating" or additional security measures.
+  - id: Art.5.2
+    description: Does the organization's cybersecurity policy allow for the implementation of measures that achieve a higher level of security?
+    type: manual
+    help_text: Ensure internal policies are not strictly limited to minimum legal requirements but focus on risk-based security excellence.

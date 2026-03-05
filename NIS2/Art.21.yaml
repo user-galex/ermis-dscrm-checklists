@@ -1,0 +1,43 @@
+control_id: Art.21
+title: Cybersecurity risk-management measures
+checklist_items:
+  - id: Art.21.1
+    description: Does the organization have comprehensive policies on risk analysis and information system security?
+    type: manual
+    help_text: Review and update security policies to ensure they cover all aspects of the organization's information systems and are based on regular risk assessments.
+  - id: Art.21.2
+    description: Is there a formal process for security incident handling, including detection, analysis, and containment?
+    type: automated
+    help_text: Implement a Security Operations Center (SOC) or incident response team with defined playbooks for different types of cyber threats.
+  - id: Art.21.3
+    description: Are business continuity measures in place, including backup management, disaster recovery, and crisis management?
+    type: manual
+    help_text: Develop and test a Business Continuity Plan (BCP) and Disaster Recovery Plan (DRP) at least annually. Ensure backups are stored securely and off-site.
+  - id: Art.21.4
+    description: Does the organization assess the security of its supply chain and relationships with direct suppliers?
+    type: manual
+    help_text: Perform security audits or assessments of key vendors and include cybersecurity requirements in all third-party contracts.
+  - id: Art.21.5
+    description: Is security integrated into the acquisition, development, and maintenance of network and information systems?
+    type: manual
+    help_text: Adopt a Secure Software Development Lifecycle (S-SDLC) and ensure vulnerability management is part of the system maintenance process.
+  - id: Art.21.6
+    description: Are there procedures to assess the effectiveness of the cybersecurity risk-management measures?
+    type: manual
+    help_text: Conduct regular internal audits, vulnerability scans, and penetration tests to validate the security posture.
+  - id: Art.21.7
+    description: Does the organization promote basic cyber hygiene practices and provide cybersecurity training to all staff?
+    type: manual
+    help_text: Implement mandatory security awareness training for all employees and enforce practices like strong passwords and workstation locking.
+  - id: Art.21.8
+    description: Are policies and procedures in place for the use of cryptography and, where appropriate, encryption?
+    type: automated
+    help_text: Use industry-standard encryption (e.g., AES-256) for data at rest and in transit. Manage cryptographic keys securely.
+  - id: Art.21.9
+    description: Does the organization implement human resources security, access control policies, and asset management?
+    type: manual
+    help_text: Enforce the principle of least privilege, maintain an accurate asset inventory, and conduct background checks for sensitive roles.
+  - id: Art.21.10
+    description: Are multi-factor authentication (MFA) or continuous authentication solutions used where appropriate?
+    type: automated
+    help_text: Mandate MFA for all remote access, privileged accounts, and access to critical systems and data.

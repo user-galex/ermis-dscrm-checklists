@@ -1,0 +1,7 @@
+control_id: Art.44
+title: Repeal
+checklist_items:
+  - id: Art.44.1
+    description: Has the organization transitioned from NIS1 to NIS2 compliance?
+    type: manual
+    help_text: NIS1 is repealed by NIS2. Ensure all policies and procedures that referenced the old directive are updated.

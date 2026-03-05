@@ -1,0 +1,11 @@
+control_id: Art.14
+title: Cooperation Group
+checklist_items:
+  - id: Art.14.1
+    description: Does the organization monitor the guidance and outputs produced by the NIS Cooperation Group?
+    type: manual
+    help_text: Regularly review the Cooperation Group's publications for best practices, guidelines, and cross-border security requirements.
+  - id: Art.14.2
+    description: Are the organization's cybersecurity policies aligned with the non-binding guidelines issued by the Cooperation Group?
+    type: manual
+    help_text: Incorporate relevant Cooperation Group recommendations into internal security frameworks and standards.

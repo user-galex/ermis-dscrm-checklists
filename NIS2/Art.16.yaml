@@ -1,0 +1,7 @@
+control_id: Art.16
+title: European cyber crisis liaison organisation network (EU-CyCLONe)
+checklist_items:
+  - id: Art.16.1
+    description: Is the organization aware of the EU-CyCLONe network and its role in large-scale cyber crisis management?
+    type: manual
+    help_text: Understand the escalation paths from national level to the EU-wide crisis management framework.

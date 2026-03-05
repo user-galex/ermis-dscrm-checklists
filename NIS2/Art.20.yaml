@@ -1,0 +1,27 @@
+control_id: Art.20
+title: Governance
+checklist_items:
+  - id: Art.20.1
+    description: Have the organization's management bodies approved the cybersecurity risk-management measures?
+    type: manual
+    help_text: Ensure there is documented approval (e.g., board minutes or signed policy) from the highest management level for the security strategy and measures.
+  - id: Art.20.2
+    description: Does the management body oversee the implementation of the cybersecurity risk-management measures?
+    type: manual
+    help_text: Establish regular reporting cycles (e.g., quarterly) to the management body on the status and effectiveness of the security program.
+  - id: Art.20.3
+    description: Are management body members held liable for non-compliance with NIS2 requirements?
+    type: manual
+    help_text: Ensure management is aware of their personal liability and accountability for cybersecurity breaches as defined in national transposition laws.
+  - id: Art.20.4
+    description: Do all management members receive regular, specific cybersecurity training?
+    type: manual
+    help_text: Implement a tailored training program for executives and board members that covers risk identification, assessment, and the impact of cybersecurity on the business.
+  - id: Art.20.5
+    description: Is there a record of cybersecurity training attendance for all management personnel?
+    type: manual
+    help_text: Maintain an up-to-date training log as evidence of compliance for auditors and authorities.
+  - id: Art.20.6
+    description: Does the organization provide similar training to all employees on a regular basis?
+    type: manual
+    help_text: Roll out a general cybersecurity awareness program for all staff, covering basic computer hygiene and threat recognition.

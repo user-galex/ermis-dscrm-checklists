@@ -1,0 +1,11 @@
+control_id: Art.9
+title: National cyber crisis management frameworks
+checklist_items:
+  - id: Art.9.1
+    description: Does the organization's crisis management plan align with the national cyber crisis management framework?
+    type: manual
+    help_text: Ensure internal escalation paths and communication protocols are compatible with national procedures for large-scale incidents.
+  - id: Art.9.2
+    description: Is the organization aware of the role of the national "cyber crisis management authority" (if designated)?
+    type: manual
+    help_text: Understand how the organization will be expected to cooperate during a national-level cyber crisis.

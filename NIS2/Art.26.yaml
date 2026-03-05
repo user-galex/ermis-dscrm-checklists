@@ -1,0 +1,11 @@
+control_id: Art.26
+title: Jurisdiction and territoriality
+checklist_items:
+  - id: Art.26.1
+    description: Has the organization identified which Member State has jurisdiction over its operations for NIS2 purposes?
+    type: manual
+    help_text: Jurisdiction is typically based on the "main establishment" in the EU. Document the rationale for the designated home Member State.
+  - id: Art.26.2
+    description: If the organization is not established in the EU but provides services there, has it designated a representative?
+    type: manual
+    help_text: Appoint a legal representative in one of the Member States where services are offered to act as a point of contact for authorities.

@@ -1,0 +1,7 @@
+control_id: Art.38
+title: Exercise of the delegation
+checklist_items:
+  - id: Art.38.1
+    description: Does the organization monitor delegated acts adopted by the Commission that provide further technical details?
+    type: manual
+    help_text: Stay informed about European Commission regulations that may specify technical, operational, or methodological requirements for certain articles.

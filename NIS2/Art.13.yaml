@@ -1,0 +1,11 @@
+control_id: Art.13
+title: Cooperation at national level
+checklist_items:
+  - id: Art.13.1
+    description: Is the organization actively participating in national cybersecurity cooperation mechanisms?
+    type: manual
+    help_text: Engage in industry-specific cybersecurity forums, national information-sharing platforms, or sector-oriented working groups.
+  - id: Art.13.2
+    description: Does the organization share relevant cybersecurity information with national authorities and peers?
+    type: manual
+    help_text: Implement procedures for voluntary information sharing about threats, near misses, or defensive techniques.

@@ -1,0 +1,7 @@
+control_id: Art.17
+title: International cooperation
+checklist_items:
+  - id: Art.17.1
+    description: If the organization operates outside the EU, does it align its security practices with relevant international agreements mentioned in NIS2?
+    type: manual
+    help_text: Review international cybersecurity cooperation frameworks that may apply to the organization's global operations.

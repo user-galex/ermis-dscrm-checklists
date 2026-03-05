@@ -1,0 +1,7 @@
+control_id: Art.39
+title: Committee procedure
+checklist_items:
+  - id: Art.39.1
+    description: Does the organization track the work of the NIS Committee?
+    type: manual
+    help_text: Monitor the implementation of the Directive through the committee procedure, which may result in new implementing acts.

@@ -1,0 +1,7 @@
+control_id: Art.42
+title: Amendment of Regulation (EU) No 910/2014
+checklist_items:
+  - id: Art.42.1
+    description: If the organization is a trust service provider, does it comply with the amended eIDAS Regulation?
+    type: manual
+    help_text: Review the changes to eIDAS introduced by NIS2 specifically regarding security requirements for trust services.

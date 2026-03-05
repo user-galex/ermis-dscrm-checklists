@@ -1,0 +1,11 @@
+control_id: Art.7
+title: National cybersecurity strategy
+checklist_items:
+  - id: Art.7.1
+    description: Has the organization reviewed the national cybersecurity strategy of the Member State(s) where it operates?
+    type: manual
+    help_text: Align corporate security goals with the strategic objectives, priorities, and governance frameworks defined by the national strategy.
+  - id: Art.7.2
+    description: Does the organization participate in any public-private partnerships or information-sharing forums mentioned in the strategy?
+    type: manual
+    help_text: Engage with national cybersecurity centers or industry-specific ISACs (Information Sharing and Analysis Centers).

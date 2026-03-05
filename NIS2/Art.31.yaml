@@ -1,0 +1,11 @@
+control_id: Art.31
+title: General aspects concerning supervision and enforcement
+checklist_items:
+  - id: Art.31.1
+    description: Is the organization aware of the general supervisory and enforcement powers of the competent authorities?
+    type: manual
+    help_text: Review the national transposition laws to understand the specific powers (e.g., inspections, audits, warnings) available to regulators.
+  - id: Art.31.2
+    description: Does the organization have a process to cooperate with competent authorities during supervisory activities?
+    type: manual
+    help_text: Designate a point of contact for regulatory inquiries and ensure documentation is readily available for review.

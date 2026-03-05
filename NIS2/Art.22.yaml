@@ -1,0 +1,11 @@
+control_id: Art.22
+title: Union level coordinated security risk assessments of critical supply chains
+checklist_items:
+  - id: Art.22.1
+    description: Does the organization monitor Union-level coordinated risk assessments for critical supply chains?
+    type: manual
+    help_text: Stay informed about EU-wide assessments of critical sectors (e.g., 5G, cloud services) and adjust the internal supply chain risk strategy accordingly.
+  - id: Art.22.2
+    description: Has the organization identified any "high-risk" suppliers as designated by Union or national assessments?
+    type: manual
+    help_text: Review the list of suppliers against national and EU-wide risk advisories and develop mitigation plans for any dependencies on high-risk vendors.

@@ -1,0 +1,15 @@
+control_id: Art.3
+title: Essential and important entities
+checklist_items:
+  - id: Art.3.1
+    description: Has the organization formally classified itself as an "essential entity" or an "important entity"?
+    type: manual
+    help_text: Essential entities include those in Annex I that exceed the size thresholds. Important entities include those in Annex II or those in Annex I that are medium-sized.
+  - id: Art.3.2
+    description: Has the organization verified its classification with the relevant national competent authority?
+    type: manual
+    help_text: Check national registries or communication from authorities to confirm the organization's designated status.
+  - id: Art.3.3
+    description: Does the organization understand the different supervisory and enforcement regimes for essential vs. important entities?
+    type: manual
+    help_text: Essential entities are subject to ex-ante and ex-post supervision, while important entities are generally subject to ex-post supervision.

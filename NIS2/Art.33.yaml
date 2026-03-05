@@ -1,0 +1,11 @@
+control_id: Art.33
+title: Supervisory and enforcement measures in relation to important entities
+checklist_items:
+  - id: Art.33.1
+    description: If classified as an "important entity," is the organization aware that it is subject to reactive (ex-post) supervision?
+    type: manual
+    help_text: Be prepared for supervisory actions following an incident or if there is evidence of non-compliance.
+  - id: Art.33.2
+    description: Does the organization maintain documentation of its cybersecurity measures to provide to authorities upon request?
+    type: manual
+    help_text: Ensure all security policies and records of incident handling are archived and retrievable for at least the legally required period.

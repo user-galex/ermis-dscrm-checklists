@@ -1,0 +1,7 @@
+control_id: Art.41
+title: Transposition
+checklist_items:
+  - id: Art.41.1
+    description: Has the organization tracked the transposition of NIS2 into the national laws of all Member States where it operates?
+    type: manual
+    help_text: Each Member State must adopt its own laws by October 17, 2024. Ensure compliance with each specific national version of the Directive.

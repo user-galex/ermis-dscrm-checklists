@@ -1,0 +1,11 @@
+control_id: Art.24
+title: Use of European cybersecurity certification schemes
+checklist_items:
+  - id: Art.24.1
+    description: Does the organization use ICT products, services, or processes that are certified under European cybersecurity certification schemes?
+    type: manual
+    help_text: Prioritize the procurement of certified products (e.g., under EUCC or EUCS) to demonstrate compliance and high security standards.
+  - id: Art.24.2
+    description: Has the organization considered certifying its own products or services under these schemes?
+    type: manual
+    help_text: Evaluate the benefits of obtaining European certification for the organization's core offerings to build trust and meet regulatory expectations.

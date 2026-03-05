@@ -1,0 +1,11 @@
+control_id: Art.11
+title: Requirements, technical capabilities and tasks of CSIRTs
+checklist_items:
+  - id: Art.11.1
+    description: Does the organization have a defined procedure for interacting with the national CSIRT?
+    type: manual
+    help_text: Document the communication channels and contact points for the national CSIRT, ensuring multiple ways to reach them.
+  - id: Art.11.2
+    description: Is the organization's incident response team aware of the CSIRT's core tasks and capabilities?
+    type: manual
+    help_text: Review the CSIRT's services (e.g., monitoring, early warnings, forensic analysis) to understand what support is available during an incident.

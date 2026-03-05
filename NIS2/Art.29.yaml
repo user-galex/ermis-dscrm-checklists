@@ -1,0 +1,11 @@
+control_id: Art.29
+title: Cybersecurity information-sharing arrangements
+checklist_items:
+  - id: Art.29.1
+    description: Does the organization participate in any cybersecurity information-sharing arrangements?
+    type: manual
+    help_text: Join ISACs or other collaborative groups to share threat intelligence and best practices in a trusted environment.
+  - id: Art.29.2
+    description: Are there safeguards in place to protect the confidentiality and integrity of shared information?
+    type: manual
+    help_text: Use secure communication platforms and agree on data handling rules (e.g., Traffic Light Protocol) within sharing groups.

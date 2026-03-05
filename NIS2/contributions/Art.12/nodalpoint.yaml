@@ -1,0 +1,7 @@
+control: Art.12
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.12.2
+    notes: "We have implemented a security.txt file (RFC 9116) on our main domain and established a private bug bounty program to manage vulnerability reports in coordination with the national CSIRT."

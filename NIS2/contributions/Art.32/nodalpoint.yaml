@@ -1,0 +1,7 @@
+control: Art.32
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.32.2
+    notes: "As an essential entity, we maintain a 'compliance folder' that is updated monthly. This folder contains all necessary evidence (logs, audit reports, policy approvals) required for proactive on-site inspections."

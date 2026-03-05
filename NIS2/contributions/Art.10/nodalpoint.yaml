@@ -1,0 +1,7 @@
+control: Art.10
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.10.1
+    notes: "We have registered with the national CSIRT and established a dedicated PGP-encrypted email channel for reporting and receiving alerts. Our SOC team monitors the CSIRT's RSS feed 24/7."

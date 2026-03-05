@@ -1,0 +1,11 @@
+control_id: Art.34
+title: General conditions for imposing administrative fines on essential and important entities
+checklist_items:
+  - id: Art.34.1
+    description: Does the organization understand the financial risks associated with non-compliance?
+    type: manual
+    help_text: Inform management that fines can reach up to EUR 10 million or 2% of global turnover for essential entities, and EUR 7 million or 1.4% for important entities.
+  - id: Art.34.2
+    description: Are there internal controls to mitigate the factors that increase the severity of fines (e.g., intent, negligence, failure to report)?
+    type: manual
+    help_text: Focus on timely reporting, documented compliance efforts, and proactive remediation to demonstrate cooperation with authorities.

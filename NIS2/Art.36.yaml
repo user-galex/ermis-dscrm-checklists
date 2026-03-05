@@ -1,0 +1,11 @@
+control_id: Art.36
+title: Penalties
+checklist_items:
+  - id: Art.36.1
+    description: Has the organization reviewed the specific penalties established in the national transposition laws?
+    type: manual
+    help_text: National laws may include additional penalties, such as criminal sanctions or periodic penalty payments, beyond administrative fines.
+  - id: Art.36.2
+    description: Is management aware of the potential for temporary bans on exercising managerial functions for repeated infringements?
+    type: manual
+    help_text: Highlight the severe personal consequences for management bodies in cases of persistent non-compliance.

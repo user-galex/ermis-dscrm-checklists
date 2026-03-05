@@ -1,0 +1,7 @@
+control_id: Art.43
+title: Amendment of Directive (EU) 2018/1972
+checklist_items:
+  - id: Art.43.1
+    description: If the organization is a provider of public electronic communications, does it comply with the amended European Electronic Communications Code?
+    type: manual
+    help_text: NIS2 introduces changes to the EECC regarding security requirements and reporting for telecommunications providers.

@@ -1,0 +1,19 @@
+control_id: Art.2
+title: Scope
+checklist_items:
+  - id: Art.2.1
+    description: Has the organization determined if it qualifies as a medium-sized or large entity under the NIS2 criteria?
+    type: manual
+    help_text: Review staff headcount and financial thresholds (turnover or balance sheet total) as defined in Commission Recommendation 2003/361/EC.
+  - id: Art.2.2
+    description: Has the organization identified if it operates in a sector listed in Annex I (Highly Critical) or Annex II (Other Critical)?
+    type: manual
+    help_text: Cross-reference the organization's primary and secondary business activities with the sectors and subsectors listed in the NIS2 Annexes.
+  - id: Art.2.3
+    description: If the organization is a small entity, does it fall under the "specific circumstances" that trigger NIS2 applicability?
+    type: manual
+    help_text: Check if the organization provides public electronic communications, trust services, DNS services, or is a sole provider of an essential service.
+  - id: Art.2.4
+    description: Does the organization provide services or carry out activities within the European Union?
+    type: manual
+    help_text: Document all EU-based operations, infrastructure, and service delivery points to confirm territorial scope.

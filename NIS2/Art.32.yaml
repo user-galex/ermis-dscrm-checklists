@@ -1,0 +1,19 @@
+control_id: Art.32
+title: Supervisory and enforcement measures in relation to essential entities
+checklist_items:
+  - id: Art.32.1
+    description: If classified as an "essential entity," is the organization prepared for proactive (ex-ante) supervision?
+    type: manual
+    help_text: Ensure that security policies, audit results, and evidence of compliance are always up to date and ready for random inspections.
+  - id: Art.32.2
+    description: Has the organization conducted independent security audits as required for essential entities?
+    type: manual
+    help_text: Schedule regular audits by qualified, independent third-party bodies to validate the effectiveness of the cybersecurity risk-management measures.
+  - id: Art.32.3
+    description: Does the organization have a process to implement binding instructions from competent authorities within the specified deadlines?
+    type: manual
+    help_text: Establish a remediation workflow to address any deficiencies or infringements identified by the regulator promptly.
+  - id: Art.32.4
+    description: Is the organization aware of the possibility of on-site inspections and security scans by the authorities?
+    type: manual
+    help_text: Maintain an accurate network map and asset inventory to facilitate security scans and inspections.

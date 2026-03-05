@@ -1,0 +1,11 @@
+control_id: Art.4
+title: Sector-specific Union legal acts
+checklist_items:
+  - id: Art.4.1
+    description: Has the organization identified any sector-specific EU legal acts that may override or supplement NIS2 requirements?
+    type: manual
+    help_text: Identify if DORA (financial sector) or other specific regulations (e.g., aviation, maritime) apply and take precedence for certain obligations.
+  - id: Art.4.2
+    description: Is there a process to ensure compliance with the most stringent requirements when multiple regulations apply?
+    type: manual
+    help_text: Perform a gap analysis between NIS2 and sector-specific acts to ensure all overlapping requirements are met.

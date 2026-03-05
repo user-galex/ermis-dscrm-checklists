@@ -1,0 +1,7 @@
+control: Art.29
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.29.1
+    notes: "We are active members of the sector-specific ISAC and use MISP (Malware Information Sharing Platform) to share and receive Indicators of Compromise (IoCs) with our peers in real-time."

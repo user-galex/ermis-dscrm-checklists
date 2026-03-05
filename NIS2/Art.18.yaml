@@ -1,0 +1,7 @@
+control_id: Art.18
+title: Report on the state of cybersecurity in the Union
+checklist_items:
+  - id: Art.18.1
+    description: Does the organization use the ENISA biennial reports on the state of cybersecurity to inform its risk assessments?
+    type: manual
+    help_text: Incorporate the findings and trends from ENISA reports into the internal threat landscape analysis.

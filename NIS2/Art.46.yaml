@@ -1,0 +1,7 @@
+control_id: Art.46
+title: Addressees
+checklist_items:
+  - id: Art.46.1
+    description: Does the organization understand that the Directive is addressed to the Member States?
+    type: manual
+    help_text: While addressed to Member States, the Directive's requirements flow down to entities via national transposition laws.

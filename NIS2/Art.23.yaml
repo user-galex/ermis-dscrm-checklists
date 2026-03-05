@@ -1,0 +1,23 @@
+control_id: Art.23
+title: Reporting obligations
+checklist_items:
+  - id: Art.23.1
+    description: Is there a process to provide an "early warning" to the CSIRT or competent authority within 24 hours of becoming aware of a significant incident?
+    type: manual
+    help_text: Ensure the incident response plan includes a 24-hour notification trigger for incidents that cause significant operational disruption or have cross-border impact.
+  - id: Art.23.2
+    description: Does the organization have a procedure to submit an "incident notification" within 72 hours?
+    type: manual
+    help_text: The 72-hour report should include an initial assessment, severity, impact, and any indicators of compromise.
+  - id: Art.23.3
+    description: Is there a process to submit a "final report" no later than one month after the incident notification?
+    type: manual
+    help_text: The final report must include a detailed description of the incident, its root cause, and the mitigation measures implemented.
+  - id: Art.23.4
+    description: Does the organization notify its service recipients of significant incidents without undue delay?
+    type: manual
+    help_text: Develop communication templates and protocols for informing customers or users about incidents that may affect them.
+  - id: Art.23.5
+    description: Are significant "near misses" also reported if they could have resulted in a significant incident?
+    type: manual
+    help_text: Encourage internal reporting and analysis of near misses to improve resilience and meet potential voluntary reporting expectations.

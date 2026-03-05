@@ -1,0 +1,7 @@
+control: Art.20
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.20.4
+    notes: "Our board of directors undergoes mandatory quarterly cybersecurity briefings tailored to our threat landscape. We use an external firm to facilitate these sessions to ensure objective risk assessment."

@@ -1,0 +1,7 @@
+control_id: Art.40
+title: Review
+checklist_items:
+  - id: Art.40.1
+    description: Is the organization aware of the periodic review process for the Directive?
+    type: manual
+    help_text: Understand that the Directive will be reviewed every few years, potentially leading to future amendments or expanded scope.

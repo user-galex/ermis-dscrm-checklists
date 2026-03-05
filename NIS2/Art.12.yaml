@@ -1,0 +1,15 @@
+control_id: Art.12
+title: Coordinated vulnerability disclosure and a European vulnerability database
+checklist_items:
+  - id: Art.12.1
+    description: Does the organization have a policy for coordinated vulnerability disclosure (CVD)?
+    type: manual
+    help_text: Establish a process for researchers and users to report vulnerabilities in the organization's products or services securely.
+  - id: Art.12.2
+    description: Is there a designated point of contact or portal for receiving vulnerability reports?
+    type: manual
+    help_text: Provide a clear way for external parties to communicate with the security team (e.g., a security.txt file or dedicated email address).
+  - id: Art.12.3
+    description: Does the organization monitor the European vulnerability database and other relevant sources for known vulnerabilities?
+    type: manual
+    help_text: Integrate external vulnerability feeds into the internal vulnerability management process.
