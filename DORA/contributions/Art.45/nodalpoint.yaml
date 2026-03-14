@@ -1,0 +1,7 @@
+control: Art.45
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.45.1
+    notes: "We participate in the F-ISAC (Financial Services Information Sharing and Analysis Center) to share threat intelligence and receive early warnings about sectoral cyber threats."

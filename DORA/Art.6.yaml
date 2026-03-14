@@ -1,0 +1,19 @@
+control_id: Art.6
+title: ICT risk management framework
+checklist_items:
+  - id: Art.6.1
+    description: Is there a documented, sound, and comprehensive ICT risk management framework?
+    type: manual
+    help_text: The framework should include strategies, policies, and tools to protect all physical and digital assets from ICT risk.
+  - id: Art.6.2
+    description: Is the ICT risk management framework reviewed at least once a year?
+    type: manual
+    help_text: Document the annual review process and any subsequent updates made to the framework based on the results.
+  - id: Art.6.3
+    description: Is there an independent control function for monitoring ICT risk?
+    type: manual
+    help_text: Ensure the ICT risk management function is separate from the IT operations to provide objective oversight.
+  - id: Art.6.4
+    description: Does the framework include a digital operational resilience strategy?
+    type: manual
+    help_text: The strategy should outline how the organization ensures it can withstand and recover from ICT disruptions.

@@ -1,0 +1,7 @@
+control_id: Art.34
+title: Operational coordination between Lead Overseers
+checklist_items:
+  - id: Art.34.1
+    description: Does the organization monitor reports from Lead Overseers on its critical providers?
+    type: manual
+    help_text: Incorporate the results of EU-level oversight into the internal third-party risk assessments.

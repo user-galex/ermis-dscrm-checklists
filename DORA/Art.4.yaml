@@ -1,0 +1,7 @@
+control_id: Art.4
+title: Proportionality principle
+checklist_items:
+  - id: Art.4.1
+    description: Are the digital operational resilience measures proportionate to the organization's size, risk profile, and complexity?
+    type: manual
+    help_text: Document the rationale for the scale and complexity of the ICT risk management framework relative to the organization's business model.

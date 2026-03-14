@@ -1,0 +1,11 @@
+control_id: Art.8
+title: Identification
+checklist_items:
+  - id: Art.8.1
+    description: Does the organization identify, classify, and document all ICT supported business functions and information assets?
+    type: manual
+    help_text: Maintain an up-to-date asset inventory that maps business processes to the underlying ICT systems and data.
+  - id: Art.8.2
+    description: Are all sources of ICT risk identified and reviewed periodically?
+    type: manual
+    help_text: Perform comprehensive risk assessments at least annually to identify new threats and vulnerabilities.

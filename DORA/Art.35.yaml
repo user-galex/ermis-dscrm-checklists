@@ -1,0 +1,7 @@
+control_id: Art.35
+title: Powers of the Lead Overseer
+checklist_items:
+  - id: Art.35.1
+    description: Is the organization aware of the Lead Overseer's powers, such as requests for information and inspections?
+    type: manual
+    help_text: Understand how the Oversight Framework may impact the services provided by critical ICT providers.

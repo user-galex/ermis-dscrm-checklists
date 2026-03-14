@@ -1,0 +1,7 @@
+control: Art.50
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.50.1
+    notes: "Our compliance team maintains a 'DORA Penalty Registry' that tracks all regulatory technical standards and provides guidance on the potential impact of non-compliance for each article."

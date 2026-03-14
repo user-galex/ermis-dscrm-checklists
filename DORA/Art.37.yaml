@@ -1,0 +1,7 @@
+control_id: Art.37
+title: Request for information
+checklist_items:
+  - id: Art.37.1
+    description: Is there a process to cooperate with requests for information from the Lead Overseer?
+    type: manual
+    help_text: Coordinate with critical providers to ensure timely and accurate responses to regulatory requests.

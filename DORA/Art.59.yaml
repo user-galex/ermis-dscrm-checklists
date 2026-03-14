@@ -1,0 +1,7 @@
+control_id: Art.59
+title: Amendments to Regulation (EC) No 1060/2009
+checklist_items:
+  - id: Art.59.1
+    description: If the organization is a credit rating agency, does it comply with the amended CRA Regulation?
+    type: manual
+    help_text: Review the security requirements introduced by DORA for credit rating agencies.

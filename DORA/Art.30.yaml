@@ -1,0 +1,11 @@
+control_id: Art.30
+title: Key contractual provisions
+checklist_items:
+  - id: Art.30.1
+    description: Do all contracts with ICT third-party service providers include the mandatory provisions listed in Article 30?
+    type: manual
+    help_text: Contracts should specify service levels, accessibility, audit rights, and termination clauses.
+  - id: Art.30.2
+    description: Are there specific clauses for services supporting critical or important functions?
+    type: manual
+    help_text: These contracts require additional protections such as full audit rights and transition plans.

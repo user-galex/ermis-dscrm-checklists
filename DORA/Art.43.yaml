@@ -1,0 +1,7 @@
+control_id: Art.43
+title: Oversight fees
+checklist_items:
+  - id: Art.43.1
+    description: Does the organization understand the funding model for the Oversight Framework?
+    type: manual
+    help_text: Be aware that critical providers are charged fees for their oversight, which could impact service costs.

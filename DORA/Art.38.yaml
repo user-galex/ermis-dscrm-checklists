@@ -1,0 +1,7 @@
+control_id: Art.38
+title: General investigations
+checklist_items:
+  - id: Art.38.1
+    description: Does the organization understand its role in general investigations of critical providers?
+    type: manual
+    help_text: Financial entities may be asked to provide input during regulatory investigations of their providers.

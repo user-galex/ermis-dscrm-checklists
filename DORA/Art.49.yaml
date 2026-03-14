@@ -1,0 +1,7 @@
+control_id: Art.49
+title: Financial cross-sector exercises, communication and cooperation
+checklist_items:
+  - id: Art.49.1
+    description: Does the organization participate in financial cross-sector resilience exercises?
+    type: manual
+    help_text: Engage in large-scale cyber drills coordinated by authorities to test sectoral resilience.

@@ -1,0 +1,7 @@
+control_id: Art.58
+title: Review clause
+checklist_items:
+  - id: Art.58.1
+    description: Is the organization aware of the periodic review process for DORA?
+    type: manual
+    help_text: Understand that the regulation will be reviewed and potentially updated by the European Commission.

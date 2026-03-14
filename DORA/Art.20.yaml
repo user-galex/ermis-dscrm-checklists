@@ -1,0 +1,7 @@
+control_id: Art.20
+title: Harmonisation of reporting content and templates
+checklist_items:
+  - id: Art.20.1
+    description: Does the organization use the harmonised templates for reporting incidents?
+    type: manual
+    help_text: Align incident reports with the Implementing Technical Standards (ITS) provided by the ESAs.

@@ -1,0 +1,7 @@
+control_id: Art.64
+title: Entry into force and application
+checklist_items:
+  - id: Art.64.1
+    description: Is the organization aware of the application date of DORA (January 17, 2025)?
+    type: manual
+    help_text: DORA became fully applicable on January 17, 2025. All requirements must be met by this date.

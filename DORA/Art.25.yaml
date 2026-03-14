@@ -1,0 +1,11 @@
+control_id: Art.25
+title: Testing of ICT tools and systems
+checklist_items:
+  - id: Art.25.1
+    description: Does the testing include vulnerability assessments, scans, and network security reviews?
+    type: automated
+    help_text: Use automated tools for regular vulnerability identification and network mapping.
+  - id: Art.25.2
+    description: Are source code reviews and compatibility tests performed when changes occur?
+    type: manual
+    help_text: Integrate security testing into the DevOps/SDLC lifecycle.

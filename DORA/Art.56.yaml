@@ -1,0 +1,7 @@
+control_id: Art.56
+title: Data Protection
+checklist_items:
+  - id: Art.56.1
+    description: Does the organization ensure compliance with GDPR when processing personal data for DORA purposes?
+    type: manual
+    help_text: Coordinate with the DPO to ensure all data processing activities under DORA meet data protection standards.

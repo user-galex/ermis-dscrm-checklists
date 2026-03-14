@@ -1,0 +1,7 @@
+control_id: Art.40
+title: Ongoing oversight
+checklist_items:
+  - id: Art.40.1
+    description: Does the organization monitor the ongoing oversight activities for its critical providers?
+    type: manual
+    help_text: Incorporate continuous oversight findings into the internal third-party risk management lifecycle.

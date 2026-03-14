@@ -1,0 +1,7 @@
+control_id: Art.15
+title: Further harmonisation of ICT risk management tools, methods, processes and policies
+checklist_items:
+  - id: Art.15.1
+    description: Does the organization monitor the Regulatory Technical Standards (RTS) for further harmonisation of ICT risk management?
+    type: manual
+    help_text: Stay informed about the delegated acts from ESAs (EBA, ESMA, EIOPA) that provide more granular security requirements.

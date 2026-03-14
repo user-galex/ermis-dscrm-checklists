@@ -1,0 +1,11 @@
+control_id: Art.2
+title: Scope
+checklist_items:
+  - id: Art.2.1
+    description: Has the organization confirmed it falls within the categories of financial entities listed in Article 2(1)?
+    type: manual
+    help_text: Verify if the organization is a credit institution, payment institution, investment firm, insurance undertaking, etc., as defined by the regulation.
+  - id: Art.2.2
+    description: If the organization is an ICT third-party service provider, has its status been assessed under DORA?
+    type: manual
+    help_text: Determine if the organization provides ICT services to financial entities and if it could be designated as a critical provider.

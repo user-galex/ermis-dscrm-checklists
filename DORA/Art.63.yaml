@@ -1,0 +1,7 @@
+control_id: Art.63
+title: Amendment to Regulation (EU) 2016/1011
+checklist_items:
+  - id: Art.63.1
+    description: If the organization is a benchmark administrator, does it comply with the amended Benchmark Regulation?
+    type: manual
+    help_text: Review the security requirements introduced by DORA for benchmark administrators.

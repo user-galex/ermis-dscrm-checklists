@@ -1,0 +1,7 @@
+control_id: Art.27
+title: Requirements for testers for the carrying out of TLPT
+checklist_items:
+  - id: Art.27.1
+    description: Are the testers for TLPT independent and meet the required standards of expertise?
+    type: manual
+    help_text: Review the qualifications and background of any external or internal testers before starting a TLPT.

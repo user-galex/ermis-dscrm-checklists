@@ -1,0 +1,7 @@
+control: Art.13
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.13.1
+    notes: "We conduct 'blame-free' post-incident reviews for all significant incidents. Lessons learned are documented and tracked as part of our continuous improvement lifecycle."

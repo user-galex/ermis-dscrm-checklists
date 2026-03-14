@@ -1,0 +1,11 @@
+control_id: Art.17
+title: ICT-related incident management process
+checklist_items:
+  - id: Art.17.1
+    description: Is there a documented and effective process for managing ICT-related incidents?
+    type: manual
+    help_text: The process should include detection, recording, classification, and notification of incidents as required by the regulation.
+  - id: Art.17.2
+    description: Are there clear indicators and thresholds for identifying and managing major ICT-related incidents?
+    type: manual
+    help_text: Define criteria for 'major incident' based on the impact on services, number of affected users, and cross-border significance.

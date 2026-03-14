@@ -1,0 +1,7 @@
+control_id: Art.14
+title: Communication
+checklist_items:
+  - id: Art.14.1
+    description: Is there a communication plan for informing internal and external stakeholders during an ICT incident?
+    type: manual
+    help_text: The plan should include templates and protocols for communicating with staff, customers, and regulators.

@@ -1,0 +1,11 @@
+control_id: Art.7
+title: ICT systems, protocols and tools
+checklist_items:
+  - id: Art.7.1
+    description: Are ICT systems and tools reliable, technologically resilient, and have sufficient capacity?
+    type: manual
+    help_text: Conduct regular capacity planning and stress testing to ensure systems can handle peak loads and remain operational.
+  - id: Art.7.2
+    description: Are the ICT systems supported by appropriate ICT protocols and tools?
+    type: automated
+    help_text: Verify that systems use secure and up-to-date protocols (e.g., TLS 1.3) and that security tools (e.g., EDR, SIEM) are fully deployed.

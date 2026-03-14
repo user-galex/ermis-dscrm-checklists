@@ -1,0 +1,11 @@
+control_id: Art.3
+title: Definitions
+checklist_items:
+  - id: Art.3.1
+    description: Are DORA-specific definitions for 'ICT risk', 'ICT incident', and 'digital operational resilience' adopted in internal policies?
+    type: manual
+    help_text: Align internal terminology with Article 3 to ensure consistent communication with regulators and during incident reporting.
+  - id: Art.3.2
+    description: Is there a clear internal understanding of 'critical or important functions'?
+    type: manual
+    help_text: Define and document which business functions are critical or important based on the potential impact of their disruption.

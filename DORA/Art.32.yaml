@@ -1,0 +1,7 @@
+control_id: Art.32
+title: Structure of the Oversight Framework
+checklist_items:
+  - id: Art.32.1
+    description: Does the organization understand the role of the Lead Overseer for critical ICT providers?
+    type: manual
+    help_text: Be aware of how the European Supervisory Authorities (ESAs) provide oversight for CTPPs.

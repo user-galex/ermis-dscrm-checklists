@@ -1,0 +1,19 @@
+control_id: Art.5
+title: Governance and organisation
+checklist_items:
+  - id: Art.5.1
+    description: Does the management body have ultimate responsibility for managing the organization's ICT risk?
+    type: manual
+    help_text: Ensure the board or equivalent management body formally approves and regularly reviews the ICT risk management framework.
+  - id: Art.5.2
+    description: Has the management body defined the risk tolerance level for ICT risk?
+    type: manual
+    help_text: Document the approved ICT risk appetite and ensure it is communicated to relevant departments.
+  - id: Art.5.3
+    description: Does the management body monitor the implementation of the ICT risk management framework?
+    type: manual
+    help_text: Establish regular reporting lines from the CISO/IT Security to the management body on ICT risks and incidents.
+  - id: Art.5.4
+    description: Do members of the management body maintain sufficient knowledge and skills to understand and assess ICT risk?
+    type: manual
+    help_text: Implement mandatory, regular ICT risk training for all board members and senior management.

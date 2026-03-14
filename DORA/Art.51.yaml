@@ -1,0 +1,7 @@
+control_id: Art.51
+title: Exercise of the power to impose administrative penalties and remedial measures
+checklist_items:
+  - id: Art.51.1
+    description: Does the organization have a process to respond to and mitigate potential regulatory penalties?
+    type: manual
+    help_text: Document compliance efforts to demonstrate cooperation and good faith to authorities.

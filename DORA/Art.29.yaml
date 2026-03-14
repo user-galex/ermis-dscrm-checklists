@@ -1,0 +1,11 @@
+control_id: Art.29
+title: Preliminary assessment of ICT concentration risk at entity level
+checklist_items:
+  - id: Art.29.1
+    description: Does the organization assess the risk of concentration for its ICT services?
+    type: manual
+    help_text: Identify and monitor any over-reliance on a single provider or a group of providers.
+  - id: Art.29.2
+    description: Are there plans to mitigate identified concentration risks?
+    type: manual
+    help_text: Consider multi-vendor strategies or portability arrangements for critical services.

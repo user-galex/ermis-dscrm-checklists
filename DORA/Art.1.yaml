@@ -1,0 +1,11 @@
+control_id: Art.1
+title: Subject matter
+checklist_items:
+  - id: Art.1.1
+    description: Does the organization understand the uniform requirements for the security of network and information systems supporting the business processes of financial entities?
+    type: manual
+    help_text: Review internal strategy documents to ensure alignment with DORA's objective of achieving a high common level of digital operational resilience.
+  - id: Art.1.2
+    description: Has the organization identified its obligations regarding ICT risk management, incident reporting, digital operational resilience testing, and ICT third-party risk?
+    type: manual
+    help_text: Map current operations against the key pillars of DORA to ensure all regulatory requirements are addressed in the corporate policy.

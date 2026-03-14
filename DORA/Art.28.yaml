@@ -1,0 +1,19 @@
+control_id: Art.28
+title: General principles
+checklist_items:
+  - id: Art.28.1
+    description: Does the organization manage ICT third-party risk as an integral part of its ICT risk management framework?
+    type: manual
+    help_text: Review policies to ensure ICT third-party risk is addressed across the entire lifecycle of any service.
+  - id: Art.28.2
+    description: Is there a strategy for ICT third-party risk?
+    type: manual
+    help_text: The strategy should include a policy on the use of ICT services supporting critical or important functions.
+  - id: Art.28.3
+    description: Does the organization maintain a register of information for all ICT third-party services?
+    type: manual
+    help_text: Maintain an up-to-date inventory of all ICT third-party providers and the services they provide.
+  - id: Art.28.4
+    description: Are all new ICT third-party arrangements assessed for their risk?
+    type: manual
+    help_text: Conduct due diligence on all potential providers before signing contracts.

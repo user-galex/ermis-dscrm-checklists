@@ -1,0 +1,7 @@
+control_id: Art.61
+title: Amendments to Regulation (EU) No 909/2014
+checklist_items:
+  - id: Art.61.1
+    description: If the organization is a central securities depository, does it comply with the amended CSDR Regulation?
+    type: manual
+    help_text: Review the security requirements introduced by DORA for central securities depositories.

@@ -1,0 +1,7 @@
+control_id: Art.53
+title: Notification duties
+checklist_items:
+  - id: Art.53.1
+    description: Are there procedures for notifying authorities and clients of significant changes to ICT security?
+    type: manual
+    help_text: Ensure all regulatory notification requirements are met according to the timelines in Article 53.

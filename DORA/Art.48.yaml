@@ -1,0 +1,7 @@
+control_id: Art.48
+title: Cooperation between authorities
+checklist_items:
+  - id: Art.48.1
+    description: Is the organization aware of how different authorities cooperate in its supervision?
+    type: manual
+    help_text: Understand the communication paths between national and EU-level regulators.

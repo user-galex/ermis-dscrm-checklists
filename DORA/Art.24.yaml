@@ -1,0 +1,11 @@
+control_id: Art.24
+title: General requirements for the performance of digital operational resilience testing
+checklist_items:
+  - id: Art.24.1
+    description: Is there a comprehensive digital operational resilience testing program?
+    type: manual
+    help_text: The program should include a range of assessments, tests, methodologies, practices, and tools.
+  - id: Art.24.2
+    description: Are all critical ICT systems and applications tested at least once a year?
+    type: manual
+    help_text: Maintain a testing schedule that covers all critical business functions supported by ICT.

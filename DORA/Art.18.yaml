@@ -1,0 +1,11 @@
+control_id: Art.18
+title: Classification of ICT-related incidents and cyber threats
+checklist_items:
+  - id: Art.18.1
+    description: Does the organization have a classification scheme for ICT-related incidents?
+    type: manual
+    help_text: Use the criteria in Article 18(1) such as number of clients, duration, geographical spread, and data loss to classify incidents.
+  - id: Art.18.2
+    description: Are significant cyber threats also classified and documented?
+    type: manual
+    help_text: Identify and categorize potential threats that could lead to a major ICT-related incident.

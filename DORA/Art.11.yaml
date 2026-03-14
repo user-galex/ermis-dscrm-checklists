@@ -1,0 +1,11 @@
+control_id: Art.11
+title: Response and recovery
+checklist_items:
+  - id: Art.11.1
+    description: Is there an ICT-related incident response policy in place?
+    type: manual
+    help_text: The policy should define the roles, responsibilities, and procedures for responding to and recovering from ICT incidents.
+  - id: Art.11.2
+    description: Are recovery and restoration procedures documented and tested?
+    type: manual
+    help_text: Ensure that RTOs (Recovery Time Objectives) and RPOs (Recovery Point Objectives) are defined and met during recovery drills.

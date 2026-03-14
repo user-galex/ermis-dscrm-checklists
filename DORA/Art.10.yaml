@@ -1,0 +1,11 @@
+control_id: Art.10
+title: Detection
+checklist_items:
+  - id: Art.10.1
+    description: Are mechanisms in place to promptly detect anomalous activities and ICT-related incidents?
+    type: automated
+    help_text: Implement continuous monitoring tools (e.g., SIEM, IDS/IPS) to alert the security team of potential threats in real-time.
+  - id: Art.10.2
+    description: Are detection tools and processes tested regularly?
+    type: manual
+    help_text: Conduct red-teaming or breach and attack simulation (BAS) to verify that detection mechanisms are working as expected.

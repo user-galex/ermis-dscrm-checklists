@@ -1,0 +1,7 @@
+control_id: Art.62
+title: Amendments to Regulation (EU) No 600/2014
+checklist_items:
+  - id: Art.62.1
+    description: If the organization is a data reporting service provider, does it comply with the amended MiFIR Regulation?
+    type: manual
+    help_text: Review the security requirements introduced by DORA for data reporting service providers.

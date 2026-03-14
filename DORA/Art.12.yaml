@@ -1,0 +1,11 @@
+control_id: Art.12
+title: Backup policies and procedures, restoration and recovery procedures and methods
+checklist_items:
+  - id: Art.12.1
+    description: Are backup systems physically and logically separated from the main source systems?
+    type: manual
+    help_text: Implement 'air-gapped' or immutable backups to protect against ransomware and other destructive attacks.
+  - id: Art.12.2
+    description: Are backups tested regularly for their restoration capability?
+    type: manual
+    help_text: Perform full restoration tests from backups at least quarterly to ensure data integrity and availability.

@@ -1,0 +1,7 @@
+control: Art.6
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.6.1
+    notes: "Our ICT risk management framework is aligned with ISO 27001:2022. We maintain a 'digital operational resilience policy' that maps specific DORA controls to our existing ISO framework."

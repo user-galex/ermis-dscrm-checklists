@@ -1,0 +1,7 @@
+control_id: Art.50
+title: Administrative penalties and remedial measures
+checklist_items:
+  - id: Art.50.1
+    description: Does the organization understand the potential for administrative penalties and remedial measures for non-compliance?
+    type: manual
+    help_text: Inform management about the regulator's power to issue fines and order corrective actions.

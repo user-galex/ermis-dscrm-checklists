@@ -1,0 +1,7 @@
+control_id: Art.41
+title: Harmonisation of conditions enabling the conduct of the oversight activities
+checklist_items:
+  - id: Art.41.1
+    description: Does the organization monitor the RTS/ITS related to oversight harmonisation?
+    type: manual
+    help_text: Stay informed about any new standards that impact the oversight of ICT third-party providers.

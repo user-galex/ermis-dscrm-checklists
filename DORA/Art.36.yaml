@@ -1,0 +1,7 @@
+control_id: Art.36
+title: Exercise of the powers of the Lead Overseer outside the Union
+checklist_items:
+  - id: Art.36.1
+    description: Does the organization monitor the oversight of its non-EU critical providers?
+    type: manual
+    help_text: Be aware of how the Lead Overseer coordinates oversight with non-EU authorities.

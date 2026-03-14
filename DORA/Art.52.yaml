@@ -1,0 +1,7 @@
+control_id: Art.52
+title: Criminal penalties
+checklist_items:
+  - id: Art.52.1
+    description: Is the organization aware of potential criminal penalties for non-compliance?
+    type: manual
+    help_text: Review national laws for any criminal sanctions associated with violations of DORA.

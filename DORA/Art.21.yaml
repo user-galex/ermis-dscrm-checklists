@@ -1,0 +1,7 @@
+control_id: Art.21
+title: Centralisation of reporting of major ICT-related incidents
+checklist_items:
+  - id: Art.21.1
+    description: Is the organization aware of any centralized reporting hubs established at the EU level?
+    type: manual
+    help_text: Monitor the development of the Single EU Hub for major incident reporting.

@@ -1,0 +1,15 @@
+control_id: Art.45
+title: Information-sharing arrangements on cyber threat information and intelligence
+checklist_items:
+  - id: Art.45.1
+    description: Does the organization participate in arrangements for sharing cyber threat information and intelligence?
+    type: manual
+    help_text: Join ISACs or other collaborative groups to share threat intelligence and best practices in a trusted environment.
+  - id: Art.45.2
+    description: Are there safeguards in place to protect the confidentiality and integrity of shared information?
+    type: manual
+    help_text: Use secure communication platforms and agree on data handling rules (e.g., Traffic Light Protocol) within sharing groups.
+  - id: Art.45.3
+    description: Has the organization notified the competent authority of its participation in information-sharing arrangements?
+    type: manual
+    help_text: DORA requires entities to notify regulators when they join such arrangements.

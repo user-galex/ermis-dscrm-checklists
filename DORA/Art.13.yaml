@@ -1,0 +1,11 @@
+control_id: Art.13
+title: Learning and evolving
+checklist_items:
+  - id: Art.13.1
+    description: Does the organization conduct post-incident reviews to identify lessons learned?
+    type: manual
+    help_text: Document root cause analysis for all major incidents and implement corrective actions to prevent recurrence.
+  - id: Art.13.2
+    description: Is there a process for sharing anonymized information about incidents with other financial entities?
+    type: manual
+    help_text: Participate in information-sharing arrangements (e.g., ISACs) to benefit from collective intelligence.

@@ -1,0 +1,7 @@
+control_id: Art.42
+title: Follow-up by competent authorities
+checklist_items:
+  - id: Art.42.1
+    description: Does the organization act on the recommendations from competent authorities regarding its critical providers?
+    type: manual
+    help_text: Ensure that any regulatory follow-up is addressed in the organization's third-party risk strategy.

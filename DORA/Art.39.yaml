@@ -1,0 +1,7 @@
+control_id: Art.39
+title: Inspections
+checklist_items:
+  - id: Art.39.1
+    description: Is the organization aware of the Lead Overseer's power to conduct on-site inspections of critical providers?
+    type: manual
+    help_text: Monitor any findings from on-site inspections that could affect the organization's service resilience.

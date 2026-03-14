@@ -1,0 +1,7 @@
+control_id: Art.31
+title: Designation of critical ICT third-party service providers
+checklist_items:
+  - id: Art.31.1
+    description: Has the organization identified which of its providers could be designated as 'critical' at the EU level?
+    type: manual
+    help_text: Monitor the list of critical ICT third-party service providers (CTPPs) published by the ESAs.

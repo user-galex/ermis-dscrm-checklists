@@ -1,0 +1,15 @@
+control_id: Art.26
+title: Advanced testing of ICT tools, systems and processes based on TLPT
+checklist_items:
+  - id: Art.26.1
+    description: If required, does the organization perform Threat-Led Penetration Testing (TLPT) at least every three years?
+    type: manual
+    help_text: TLPT should cover critical functions and be conducted in a production environment where possible.
+  - id: Art.26.2
+    description: Is the TLPT conducted by qualified and independent testers?
+    type: manual
+    help_text: Ensure testers meet the criteria for professional competence and independence, whether internal or external.
+  - id: Art.26.3
+    description: Does the organization receive a certificate of completion for each TLPT?
+    type: manual
+    help_text: Obtain formal confirmation from the testers and the competent authority that the TLPT was conducted correctly.

@@ -1,0 +1,7 @@
+control_id: Art.23
+title: Operational or security payment-related incidents concerning credit institutions, payment institutions, account information service providers, and electronic money institutions
+checklist_items:
+  - id: Art.23.1
+    description: If applicable, are payment-related incidents reported in accordance with the specific requirements?
+    type: manual
+    help_text: For entities subject to PSD2, ensure that payment-related ICT incidents are reported correctly under DORA.

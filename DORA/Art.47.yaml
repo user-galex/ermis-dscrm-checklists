@@ -1,0 +1,7 @@
+control_id: Art.47
+title: Cooperation with structures and authorities established by Directive (EU) 2022/2555
+checklist_items:
+  - id: Art.47.1
+    description: Is there coordination between the organization and the structures established under NIS2 (e.g., CSIRTs)?
+    type: manual
+    help_text: Ensure that DORA and NIS2 compliance activities are aligned, especially for incident reporting.

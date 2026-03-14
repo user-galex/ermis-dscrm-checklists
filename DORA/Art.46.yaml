@@ -1,0 +1,7 @@
+control_id: Art.46
+title: Competent authorities
+checklist_items:
+  - id: Art.46.1
+    description: Has the organization identified all competent authorities responsible for its supervision under DORA?
+    type: manual
+    help_text: Maintain contact details for the sector-specific regulator and the national cybersecurity authority.

@@ -1,0 +1,7 @@
+control_id: Art.16
+title: Simplified ICT risk management framework
+checklist_items:
+  - id: Art.16.1
+    description: If the organization is a small or non-interconnected investment firm, does it apply the simplified ICT risk management framework?
+    type: manual
+    help_text: Review the specific criteria for applying the simplified framework and ensure all mandatory baseline controls are in place.

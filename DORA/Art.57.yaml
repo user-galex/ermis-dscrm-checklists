@@ -1,0 +1,7 @@
+control_id: Art.57
+title: Exercise of the delegation
+checklist_items:
+  - id: Art.57.1
+    description: Does the organization monitor delegated acts adopted by the Commission for DORA?
+    type: manual
+    help_text: Stay informed about technical standards and specifications provided through Commission regulations.

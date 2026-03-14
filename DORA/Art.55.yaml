@@ -1,0 +1,7 @@
+control_id: Art.55
+title: Professional secrecy
+checklist_items:
+  - id: Art.55.1
+    description: Are there internal controls to ensure professional secrecy when communicating with regulators?
+    type: manual
+    help_text: Protect sensitive information shared with authorities through secure channels and confidentiality agreements.

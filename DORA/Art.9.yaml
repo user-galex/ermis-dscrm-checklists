@@ -1,0 +1,11 @@
+control_id: Art.9
+title: Protection and prevention
+checklist_items:
+  - id: Art.9.1
+    description: Are appropriate ICT security policies, procedures, protocols, and tools implemented to ensure the security of data and systems?
+    type: automated
+    help_text: Deploy measures such as firewalls, encryption, and access controls to prevent unauthorized access and data breaches.
+  - id: Art.9.2
+    description: Is there a policy for patch management and vulnerability management?
+    type: automated
+    help_text: Ensure all systems are regularly patched and that vulnerability scans are conducted to identify and remediate weaknesses.

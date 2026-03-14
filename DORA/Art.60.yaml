@@ -1,0 +1,7 @@
+control_id: Art.60
+title: Amendments to Regulation (EU) No 648/2012
+checklist_items:
+  - id: Art.60.1
+    description: If the organization is a central counterparty, does it comply with the amended EMIR Regulation?
+    type: manual
+    help_text: Review the security requirements introduced by DORA for central counterparties.

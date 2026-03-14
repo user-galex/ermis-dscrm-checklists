@@ -1,0 +1,7 @@
+control_id: Art.54
+title: Publication of administrative penalties
+checklist_items:
+  - id: Art.54.1
+    description: Is management aware of the potential for public naming and shaming for non-compliance?
+    type: manual
+    help_text: Public disclosure of penalties can have significant reputational impact.

@@ -1,0 +1,7 @@
+control_id: Art.33
+title: Tasks of the Lead Overseer
+checklist_items:
+  - id: Art.33.1
+    description: Is the organization aware of the tasks performed by the Lead Overseer for its critical providers?
+    type: manual
+    help_text: The Lead Overseer assesses security, resilience, and business continuity of CTPPs.

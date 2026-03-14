@@ -1,0 +1,7 @@
+control: Art.19
+org: Nodalpoint Systems Ltd.
+contributor: soc@nodalpoint.com
+shared_on: 2026-03-05
+contributions:
+  - checklist_item_id: Art.19.1
+    notes: "We have implemented an 'incident reporting dashboard' that automatically tracks the 4-hour, 72-hour, and 1-month deadlines for major ICT incidents under DORA."

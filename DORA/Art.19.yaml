@@ -1,0 +1,15 @@
+control_id: Art.19
+title: Reporting of major ICT-related incidents and voluntary notification of significant cyber threats
+checklist_items:
+  - id: Art.19.1
+    description: Is there a process to report major ICT-related incidents to the competent authority?
+    type: manual
+    help_text: Follow the timelines: Initial report within 4 hours, Intermediate report within 72 hours, and Final report within 1 month.
+  - id: Art.19.2
+    description: Does the organization notify its clients of major ICT-related incidents that affect them?
+    type: manual
+    help_text: Communication should be prompt and include mitigation measures the client can take.
+  - id: Art.19.3
+    description: Are significant cyber threats voluntarily reported to the authorities?
+    type: manual
+    help_text: Consider the benefits of sharing information about threats that could have systemic impact.

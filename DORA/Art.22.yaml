@@ -1,0 +1,7 @@
+control_id: Art.22
+title: Supervisory feedback
+checklist_items:
+  - id: Art.22.1
+    description: Does the organization have a process to incorporate supervisory feedback into its incident management?
+    type: manual
+    help_text: Review and act upon recommendations provided by regulators following an incident report.

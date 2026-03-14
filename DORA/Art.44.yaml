@@ -1,0 +1,7 @@
+control_id: Art.44
+title: International cooperation
+checklist_items:
+  - id: Art.44.1
+    description: Does the organization monitor international cooperation on third-party risk?
+    type: manual
+    help_text: Be aware of how EU authorities cooperate with non-EU regulators to manage global ICT risk.
